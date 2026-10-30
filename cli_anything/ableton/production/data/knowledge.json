@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-30",
+  "cards": [
+    {
+      "id": "live11-mixing",
+      "kind": "manual",
+      "title": "Live 11 mixing and routing",
+      "url": "https://www.ableton.com/en/live-manual/11/mixing/",
+      "authority": "Ableton official manual",
+      "checked": "2026-10-30",
+      "applies_to": "Live 11",
+      "tools": [
+        "Mixer",
+        "Utility",
+        "returns",
+        "Master"
+      ],
+      "styles": [
+        "any",
+        "techno",
+        "melodic electronic"
+      ],
+      "topics": [
+        "mixing",
+        "routing",
+        "gain",
+        "headroom",
+        "reference"
+      ],
+      "summary": "Use track, return and master routing deliberately; inspect the signal path before changing gain or processing.",
+      "boundary": "Explains controls and routing; does not supply universal balance or loudness targets."
+    },
+    {
+      "id": "live11-dynamics",
+      "kind": "manual",
+      "title": "Live 11 audio effects: dynamics and tone",
+      "url": "https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/",
+      "authority": "Ableton official manual",
+      "checked": "2026-10-30",
+      "applies_to": "Live 11; edition dependent",
+      "tools": [
+        "Compressor",
+        "Glue Compressor",
+        "Limiter",
+        "EQ Eight",
+        "Saturator",
+        "Utility"
+      ],
+      "styles": [
+        "any",
+        "techno",
+        "house"
+      ],
+      "topics": [
+        "mixing",
+        "mastering",
+        "sidechain",
+        "sub bass",
+        "transients",
+        "equalization"
+      ],
+      "summary": "Consult native parameter meanings and detector options before applying compression, equalization or limiting.",
+      "boundary": "Control semantics only; proposed settings remain material-dependent and need a bounced comparison."
+    },
+    {
+      "id": "live11-space",
+      "kind": "manual",
+      "title": "Live 11 audio effects: depth and space",
+      "url": "https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/",
+      "authority": "Ableton official manual",
+      "checked": "2026-10-30",
+      "applies_to": "Live 11; edition dependent",
+      "tools": [
+        "Echo",
+        "Reverb",
+        "Hybrid Reverb",
+        "Auto Filter",
+        "Utility"
+      ],
+      "styles": [
+        "ambient",
+        "melodic electronic",
+        "dub techno",
+        "any"
+      ],
+      "topics": [
+        "mixing",
+        "reverb",
+        "delay",
+        "stereo",
+        "depth"
+      ],
+      "summary": "Use effect parameters and return routing as the basis for designing controlled delays and reverberant depth.",
+      "boundary": "Do not infer an artist's reverb settings from the manual or equate width with quality."
+    },
+    {
+      "id": "gain-staging",
+      "kind": "guide",
+      "title": "Gain staging from recording to mix",
+      "url": "https://www.avid.com/resource-center/gain-staging-guide",
+      "authority": "Avid official production guide",
+      "checked": "2026-10-30",
+      "applies_to": "General digital audio production",
+      "tools": [
+        "gain",
+        "meter",
+        "compressor"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "gain staging",
+        "headroom",
+        "mixing",
+        "mastering"
+      ],
+      "summary": "Manage levels through the whole signal chain so one processor does not unintentionally overload the next.",
+      "boundary": "Suggested working levels are starting points, not a rule for every floating-point signal path or plugin."
+    },
+    {
+      "id": "pigments-manual",
+      "kind": "vendor",
+      "title": "Pigments downloads and versioned manuals",
+      "url": "https://www.arturia.com/support/downloads-manuals/product/pigments",
+      "authority": "Arturia official support",
+      "checked": "2026-10-30",
+      "applies_to": "Match the manual to the locally installed version; page currently lists 7.0.1",
+      "tools": [
+        "Pigments"
+      ],
+      "styles": [
+        "acid",
+        "techno",
+        "melodic electronic",
+        "ambient"
+      ],
+      "topics": [
+        "synthesis",
+        "modulation",
+        "sound design",
+        "version"
+      ],
+      "summary": "Locate the versioned manual before designing patches; verify local rendering rather than assuming the latest download is installed.",
+      "boundary": "No automatic update, purchase, licensing claim or assumption of host compatibility."
+    },
+    {
+      "id": "pedalboard-host",
+      "kind": "sdk",
+      "title": "Offline plugin host and compatibility",
+      "url": "https://spotify.github.io/pedalboard/compatibility.html",
+      "authority": "Spotify Pedalboard official documentation",
+      "checked": "2026-10-30",
+      "applies_to": "Pedalboard 0.9.26",
+      "tools": [
+        "VST3",
+        "AU",
+        "Pedalboard"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "render",
+        "plugin",
+        "offline",
+        "probe",
+        "tail"
+      ],
+      "summary": "Some plugins require particular processing/reset behavior. Test the selected build with a bounded stimulus and retain silent or failed outcomes.",
+      "boundary": "An offline host result is not native Ableton compatibility or a complete preset test."
+    },
+    {
+      "id": "rufus-tape-notes",
+      "kind": "artist_example",
+      "title": "RUFUS DU SOL: production discussion",
+      "url": "https://podcasts.apple.com/ca/podcast/tn-150-r%C3%BCf%C3%BCs-du-sol/id1249834293?i=1000684951916",
+      "authority": "Tape Notes interview with the producers",
+      "checked": "2026-10-30",
+      "published": "2025-01-22",
+      "applies_to": "Discussion of Inhale / Exhale; Pressure, Fire / Desire, Exhale",
+      "tools": [
+        "Ableton",
+        "Serum",
+        "EchoBoy",
+        "Decapitator",
+        "ShaperBox"
+      ],
+      "styles": [
+        "melodic electronic",
+        "indie dance"
+      ],
+      "topics": [
+        "songwriting",
+        "vocal texture",
+        "gating",
+        "bass selection",
+        "artist reference"
+      ],
+      "summary": "The producers discuss vocal distortion, gating and choosing bass parts. Useful starting examples for texture and arrangement decisions.",
+      "boundary": "Interview summary and gear mentions only; no measured reference audio, exact settings, current popularity rank or instruction to imitate every track."
+    },
+    {
+      "id": "diva-design",
+      "kind": "vendor",
+      "title": "Diva synthesis modules and tutorials",
+      "url": "https://u-he.com/products/plug-ins/diva/index.html",
+      "authority": "u-he official product documentation",
+      "checked": "2026-10-30",
+      "applies_to": "Match installed Diva build; site currently lists1.4.8",
+      "tools": [
+        "Diva"
+      ],
+      "styles": [
+        "techno",
+        "house",
+        "melodic electronic",
+        "acid"
+      ],
+      "topics": [
+        "synthesis",
+        "oscillator",
+        "filter",
+        "envelope",
+        "sound design"
+      ],
+      "summary": "Use the documented oscillator, filter and envelope modules as building blocks for original bass, lead and pad patches.",
+      "boundary": "Feature documentation does not establish license state, exact artist patches or local rendering compatibility."
+    },
+    {
+      "id": "acid-v-design",
+      "kind": "vendor",
+      "title": "Acid V guided sound design and resources",
+      "url": "https://www.arturia.com/products/software-instruments/acid-v/resources",
+      "authority": "Arturia official tutorials and support",
+      "checked": "2026-10-30",
+      "applies_to": "Acid V; match manual to installed version",
+      "tools": [
+        "Acid V"
+      ],
+      "styles": [
+        "acid",
+        "techno",
+        "trance",
+        "ambient"
+      ],
+      "topics": [
+        "synthesis",
+        "bass",
+        "filter",
+        "saturation",
+        "sound design"
+      ],
+      "summary": "Vendor tutorials cover bass, trance and ambient patch design, including filter sweeps and built-in distortion.",
+      "boundary": "A tutorial is a design reference. A silent default-state offline probe does not prove the plugin cannot work in Live."
+    },
+    {
+      "id": "live11-warp",
+      "kind": "manual",
+      "title": "Audio timing and warp modes",
+      "url": "https://www.ableton.com/en/live-manual/11/audio-clips-tempo-and-warping/",
+      "authority": "Ableton official publication",
+      "checked": "2026-10-30",
+      "applies_to": "Live 11",
+      "tools": [
+        "Warp",
+        "Clip View"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "sampling",
+        "editing",
+        "timing"
+      ],
+      "summary": "Inspect warp mode and timing behavior before changing loops.",
+      "boundary": "Timing and pitch operations are native Live methods; this bridge does not automate them."
+    },
+    {
+      "id": "live11-simpler",
+      "kind": "manual",
+      "title": "Sampler instruments and slicing",
+      "url": "https://www.ableton.com/en/live-manual/11/live-instrument-reference/",
+      "authority": "Ableton official publication",
+      "checked": "2026-10-30",
+      "applies_to": "Live 11",
+      "tools": [
+        "Simpler",
+        "Sampler"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "sampling",
+        "slicing",
+        "envelope"
+      ],
+      "summary": "Consult sampling-instrument modes, envelopes and slicing controls before mapping a sample.",
+      "boundary": "Availability depends on Live edition. No native device loading or slice-to-MIDI automation is claimed."
+    },
+    {
+      "id": "live11-arrangement",
+      "kind": "manual",
+      "title": "Arrangement editing and fades",
+      "url": "https://www.ableton.com/en/live-manual/11/arrangement-view/",
+      "authority": "Ableton official publication",
+      "checked": "2026-10-30",
+      "applies_to": "Live 11",
+      "tools": [
+        "Arrangement",
+        "fades"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "editing",
+        "arrangement",
+        "transitions"
+      ],
+      "summary": "Use clip boundaries, selections and fades deliberately when preparing edits.",
+      "boundary": "The file editor supports a small subset; native arrangement automation remains outside this connector."
+    },
+    {
+      "id": "creative-strategies",
+      "kind": "guide",
+      "title": "Creative strategies and variation",
+      "url": "https://makingmusic.ableton.com/",
+      "authority": "Ableton official publication",
+      "checked": "2026-10-30",
+      "applies_to": "General creative workflow; consult applicable tool version",
+      "tools": [
+        "arrangement",
+        "automation",
+        "versions"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "style",
+        "experiments",
+        "composition"
+      ],
+      "summary": "A source for exercises on attributes, variation, automation and arranging.",
+      "boundary": "The workflow suggestions in this tool are authored prompts, not copied book text or proof of an artist technique."
+    },
+    {
+      "id": "limiter-comparison",
+      "kind": "guide",
+      "title": "Limiter output and gain comparison",
+      "url": "https://www.fabfilter.com/help/pro-l/using/outputoptions",
+      "authority": "FabFilter official help",
+      "checked": "2026-10-30",
+      "applies_to": "General creative workflow; consult applicable tool version",
+      "tools": [
+        "limiter",
+        "meter",
+        "Pro-L 2"
+      ],
+      "styles": [
+        "any"
+      ],
+      "topics": [
+        "mastering",
+        "reference",
+        "level matching"
+      ],
+      "summary": "Consult output-level and comparison controls when evaluating limiting.",
+      "boundary": "This tool does not load or emulate Pro-L 2. Its profiles are independently authored starting points."
+    }
+  ]
+}

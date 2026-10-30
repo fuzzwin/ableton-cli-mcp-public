@@ -1,0 +1,22 @@
+{
+  "workspace_tools": 20,
+  "native_writes_exposed": false,
+  "checks": [
+    {
+      "title": "Horizon After Rain",
+      "sha256": "1266f63ac8c1687ad573bc955ab7ba497434feedc460603c16551a77601a5646",
+      "sdk_stdio": true,
+      "duration_seconds": 120.0,
+      "clipped_samples": 0,
+      "speaker_playback": false
+    },
+    {
+      "title": "Signal in the Concrete",
+      "sha256": "27abdf099eef1e5cd2457ea449f686d2fe870d249ee71602381343bc922170ad",
+      "sdk_stdio": true,
+      "duration_seconds": 120.0,
+      "clipped_samples": 0,
+      "speaker_playback": false
+    }
+  ]
+}

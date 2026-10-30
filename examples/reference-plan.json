@@ -1,0 +1,7 @@
+{
+  "label":"Reference for bass weight and depth",
+  "reference":{"path":"references/user-example.wav","start_seconds":32.0,"end_seconds":64.0},
+  "candidate":{"path":"mix.wav","start_seconds":64.0,"end_seconds":96.0},
+  "focus":["bass","width","dynamics"],
+  "user_notes":"I like the deep bass and space around the lead; keep my own groove and melody."
+}

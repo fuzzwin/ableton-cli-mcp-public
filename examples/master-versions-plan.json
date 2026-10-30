@@ -1,0 +1,9 @@
+{
+  "path":"premaster.wav",
+  "intent":"Compare transient space and density at a shared comparison level.",
+  "versions":[
+    {"name":"A-open","profile":"dynamic"},
+    {"name":"B-balanced","profile":"balanced"},
+    {"name":"C-dense","profile":"dense"}
+  ]
+}

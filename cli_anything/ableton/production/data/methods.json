@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-30",
+  "authorship": "Original suggested workflows; linked sources document underlying controls and creative topics.",
+  "methods": [
+    {
+      "id": "edit-cleanly",
+      "topics": [
+        "editing",
+        "fades",
+        "arrangement"
+      ],
+      "intent": "Keep intentional transients while removing unwanted boundaries.",
+      "steps": [
+        "Choose the section and save a separate edit.",
+        "Trim at deliberate boundaries; compare short fades against the unedited transient.",
+        "Render the edit and check length, clipping and source preservation."
+      ],
+      "execute_here": [
+        "sample_edit: trim, reverse, fades, gain"
+      ],
+      "native_or_manual": [
+        "Clip arrangement, crossfades between clips and warping"
+      ],
+      "compare": "Same musical section at matched level; listen later for clicks and lost attack.",
+      "sources": [
+        "live11-arrangement",
+        "live11-warp"
+      ]
+    },
+    {
+      "id": "sample-purpose",
+      "topics": [
+        "sampling",
+        "sample",
+        "sound design",
+        "slicing"
+      ],
+      "intent": "Choose a sample for a musical role before stacking processing.",
+      "steps": [
+        "State the role: transient, low body, texture or hook.",
+        "Try a small trim/reverse/fade variation and keep the original.",
+        "For rhythmic remapping, consult Simpler/Sampler and warp settings in Live."
+      ],
+      "execute_here": [
+        "sample_edit: new WAV variants"
+      ],
+      "native_or_manual": [
+        "Pitch, warp, slices mapped to MIDI and audition"
+      ],
+      "compare": "Check pitch, groove and layering by listening later; a waveform alone cannot choose the best sample.",
+      "sources": [
+        "live11-simpler",
+        "live11-warp"
+      ]
+    },
+    {
+      "id": "mix-priorities",
+      "topics": [
+        "mixing",
+        "balance",
+        "masking",
+        "bass",
+        "techno"
+      ],
+      "intent": "Make the musical priority clear before mastering.",
+      "steps": [
+        "Name the focal element and choose a representative loud section.",
+        "Change one gain, filter or ducking decision at a time using an explicit stem plan.",
+        "Recheck quieter sections, mono loss and available headroom."
+      ],
+      "execute_here": [
+        "mix: gain, pan, high-pass, compression and kick-keyed ducking",
+        "audio_analyze: bands, dynamics and mono diagnostics"
+      ],
+      "native_or_manual": [
+        "Auditory masking, emotional focus and monitor translation"
+      ],
+      "compare": "Compare the same section at matched level; keep a move only when the stated goal improves.",
+      "sources": [
+        "live11-mixing",
+        "live11-dynamics",
+        "gain-staging"
+      ]
+    },
+    {
+      "id": "effects-depth",
+      "topics": [
+        "effects",
+        "delay",
+        "reverb",
+        "space",
+        "stereo"
+      ],
+      "intent": "Use effects to create depth and movement without hiding the focal part.",
+      "steps": [
+        "Choose the purpose: short room, long atmosphere, rhythmic repeat or distortion texture.",
+        "Try a return-path filter, timing or ducking change while keeping the dry part available.",
+        "Print an alternate stem and inspect tails, low-frequency build-up and mono compatibility."
+      ],
+      "execute_here": [
+        "mix: supplied dry/wet stems and ducking",
+        "audio_analyze: spectrum and mono diagnostics"
+      ],
+      "native_or_manual": [
+        "Load/automate Echo, reverb or saturation and render its return in Live"
+      ],
+      "compare": "Listen later to dry versus wet at matched level; more width or reverb is not automatically better.",
+      "sources": [
+        "live11-space",
+        "live11-dynamics"
+      ]
+    },
+    {
+      "id": "style-laboratory",
+      "topics": [
+        "style",
+        "experiments",
+        "groove",
+        "versions",
+        "edits"
+      ],
+      "intent": "Explore an original style without requiring an artist template.",
+      "steps": [
+        "Choose one axis: groove, density, timbre, harmony or spatial depth.",
+        "Make two named versions while keeping the other axes steady.",
+        "Record the intended difference and explicit user feedback after comparison."
+      ],
+      "execute_here": [
+        "sample_edit and master_versions: separate file variants",
+        "feedback and recall: persistent decisions"
+      ],
+      "native_or_manual": [
+        "New MIDI patterns, harmonic rewriting, arrangement and native effects automation"
+      ],
+      "compare": "Select an interesting musical direction through user feedback; technical measurements do not decide style.",
+      "sources": [
+        "creative-strategies"
+      ]
+    },
+    {
+      "id": "reference-brief",
+      "topics": [
+        "reference",
+        "mixing",
+        "bass",
+        "width",
+        "dynamics"
+      ],
+      "intent": "Use a supplied recording to explain a goal, without cloning it.",
+      "steps": [
+        "Ask which passage and attributes matter: bass, tone, width, dynamics, arrangement or effects.",
+        "Select comparable sections and create a hashed reference brief.",
+        "Treat normalized band and dynamics differences as diagnostic clues; plan a bounded change and a later listening comparison."
+      ],
+      "execute_here": [
+        "reference: local section metrics, user notes and candidate deltas"
+      ],
+      "native_or_manual": [
+        "Perceptual similarity, stem attribution and subjective acceptance"
+      ],
+      "compare": "A reference can demonstrate one attribute only; it does not mandate the entire artist sound.",
+      "sources": [
+        "limiter-comparison",
+        "live11-mixing"
+      ]
+    },
+    {
+      "id": "master-directions",
+      "topics": [
+        "mastering",
+        "master",
+        "dynamic",
+        "balanced",
+        "dense",
+        "versions"
+      ],
+      "intent": "Compare impact and density with loudness bias reduced.",
+      "steps": [
+        "Use the same approved premaster for every version.",
+        "Render dynamic, balanced and dense starting profiles with measured ceilings and reduction budgets.",
+        "Compare attenuated copies at a shared LUFS level, then use human feedback to choose a direction."
+      ],
+      "execute_here": [
+        "master_versions: up to three named masters, reports and level-matched copies"
+      ],
+      "native_or_manual": [
+        "Tonal artistry, codec delivery decisions and perceptual distortion assessment"
+      ],
+      "compare": "Profiles vary this limiter’s targets and timing; they are not genre standards or vendor algorithms.",
+      "sources": [
+        "limiter-comparison",
+        "live11-dynamics"
+      ]
+    }
+  ]
+}

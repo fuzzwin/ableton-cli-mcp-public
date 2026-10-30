@@ -1,0 +1,14 @@
+{
+  "stems": [
+    {"path":"stems/kick.wav","role":"kick","gain_db":0.0},
+    {"path":"stems/sub.wav","role":"sub","gain_db":0.0,"duck_db":4.0},
+    {"path":"stems/lead.wav","role":"lead","gain_db":0.0,"highpass_hz":120.0},
+    {"path":"stems/pad.wav","role":"pad","gain_db":-2.0,"highpass_hz":180.0,"compress":true}
+  ],
+  "duck_source":"stems/kick.wav",
+  "auto_balance":false,
+  "target_lufs":-12.0,
+  "ceiling_dbtp":-1.0,
+  "max_attempts":2,
+  "tags":["original","melodic electronic"]
+}

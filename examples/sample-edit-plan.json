@@ -1,0 +1,11 @@
+{
+  "path":"samples/source.wav",
+  "start_seconds":0.0,
+  "end_seconds":0.4,
+  "reverse":false,
+  "fade_in_ms":2.0,
+  "fade_out_ms":15.0,
+  "gain_db":0.0,
+  "peak_normalize_dbfs":-3.0,
+  "note":"A separate trimmed one-shot; preserve the original."
+}

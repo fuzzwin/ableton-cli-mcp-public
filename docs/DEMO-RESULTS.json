@@ -1,0 +1,179 @@
+{
+  "version": "0.6.0",
+  "renderer": "Authored original procedural synthesis + actual Production.mix; not native Live export",
+  "artist_audio_used": false,
+  "commercial_samples_used": false,
+  "speaker_playback": false,
+  "perceptual_listening": false,
+  "creative_acceptance": "pending",
+  "songs": [
+    {
+      "title": "Horizon After Rain",
+      "recipe": "horizon",
+      "direction": "Spacious melodic house: suspended harmony, analog motion, deep mono bass, a long emotional build.",
+      "bpm": 128,
+      "key": "F sharp minor",
+      "duration_seconds": 120,
+      "stem_count": 10,
+      "original_midi_notes": 1406,
+      "sections": [
+        {
+          "bar": 1,
+          "seconds": 0.0,
+          "label": "First light"
+        },
+        {
+          "bar": 9,
+          "seconds": 15.0,
+          "label": "Forward motion"
+        },
+        {
+          "bar": 17,
+          "seconds": 30.0,
+          "label": "Open sky"
+        },
+        {
+          "bar": 33,
+          "seconds": 60.0,
+          "label": "Weightless"
+        },
+        {
+          "bar": 41,
+          "seconds": 75.0,
+          "label": "The climb"
+        },
+        {
+          "bar": 49,
+          "seconds": 90.0,
+          "label": "After rain"
+        },
+        {
+          "bar": 61,
+          "seconds": 112.5,
+          "label": "Last light"
+        }
+      ],
+      "source_hashes_preserved": true,
+      "master": {
+        "sha256": "1266f63ac8c1687ad573bc955ab7ba497434feedc460603c16551a77601a5646",
+        "sample_rate": 44100,
+        "channels": 2,
+        "duration_seconds": 120.0,
+        "integrated_lufs": -12.600239561398078,
+        "true_peak_4x_dbtp_estimate": -1.0000002900227403,
+        "clipped_samples": 0,
+        "finite": true,
+        "crest_db": 11.268646185590782,
+        "stereo_correlation": 0.9405823367030917,
+        "lowband_side_vs_mid_db": -32.13194155700573,
+        "mono_fold_loss_db": -0.13105879252955696
+      },
+      "limiter": {
+        "candidates": [
+          {
+            "attempt": 1,
+            "drive_db": 6.8139334143507995,
+            "integrated_lufs": -12.600239560624102,
+            "true_peak_4x_dbtp_estimate": -1.0000002900227403,
+            "maximum_gain_reduction_db": 2.1027577101145742,
+            "loudness_target_met": true,
+            "reduction_budget_met": true
+          }
+        ],
+        "selected_attempt": 1,
+        "target_lufs": -12.0,
+        "ceiling_dbtp": -1.0,
+        "release_ms": 80.0,
+        "lookahead_window_ms": 10.0,
+        "reduction_budget_db": 6.0,
+        "creative_acceptance": "pending",
+        "perceptual_listening": false
+      },
+      "technical_pass": true
+    },
+    {
+      "title": "Signal in the Concrete",
+      "recipe": "pulse",
+      "direction": "Intimate chopped synth gestures, swung broken beats, a halftime bass turn, acid sequences and a big-beat final lift.",
+      "bpm": 136,
+      "key": "D minor",
+      "duration_seconds": 120,
+      "stem_count": 10,
+      "original_midi_notes": 2308,
+      "sections": [
+        {
+          "bar": 1,
+          "seconds": 0.0,
+          "label": "Voice of the circuit"
+        },
+        {
+          "bar": 9,
+          "seconds": 14.117647058823529,
+          "label": "Street pulse"
+        },
+        {
+          "bar": 25,
+          "seconds": 42.35294117647059,
+          "label": "Half time"
+        },
+        {
+          "bar": 33,
+          "seconds": 56.470588235294116,
+          "label": "Pressure rising"
+        },
+        {
+          "bar": 41,
+          "seconds": 70.58823529411765,
+          "label": "Collision"
+        },
+        {
+          "bar": 57,
+          "seconds": 98.8235294117647,
+          "label": "Acid orbit"
+        },
+        {
+          "bar": 65,
+          "seconds": 112.94117647058823,
+          "label": "Afterimage"
+        }
+      ],
+      "source_hashes_preserved": true,
+      "master": {
+        "sha256": "27abdf099eef1e5cd2457ea449f686d2fe870d249ee71602381343bc922170ad",
+        "sample_rate": 44100,
+        "channels": 2,
+        "duration_seconds": 120.0,
+        "integrated_lufs": -12.284229402472121,
+        "true_peak_4x_dbtp_estimate": -1.0000014518042233,
+        "clipped_samples": 0,
+        "finite": true,
+        "crest_db": 10.84570766534263,
+        "stereo_correlation": 0.9515952167534333,
+        "lowband_side_vs_mid_db": -29.313016680309545,
+        "mono_fold_loss_db": -0.1064053934219822
+      },
+      "limiter": {
+        "candidates": [
+          {
+            "attempt": 1,
+            "drive_db": 6.570451230431626,
+            "integrated_lufs": -12.284229389881464,
+            "true_peak_4x_dbtp_estimate": -1.0000002900227403,
+            "maximum_gain_reduction_db": 1.8281738960928517,
+            "loudness_target_met": true,
+            "reduction_budget_met": true
+          }
+        ],
+        "selected_attempt": 1,
+        "target_lufs": -12.0,
+        "ceiling_dbtp": -1.0,
+        "release_ms": 80.0,
+        "lookahead_window_ms": 10.0,
+        "reduction_budget_db": 6.0,
+        "creative_acceptance": "pending",
+        "perceptual_listening": false
+      },
+      "technical_pass": true
+    }
+  ]
+}

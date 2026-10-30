@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ableton-production": {
+      "command": "/ABSOLUTE/PATH/ableton-cli-mcp-public/.venv/bin/ableton-mcp",
+      "args": ["--workspace", "/ABSOLUTE/PATH/ableton-cli-mcp-public/production-workspace"]
+    }
+  }
+}

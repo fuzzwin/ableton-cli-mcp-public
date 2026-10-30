@@ -1,0 +1,16 @@
+Frozen initial acceptance scope, 30 October 2026.
+R1: CLI uses cli_anything namespace, JSON output and official MCP SDK stdio.
+R2: One bounded, explicitly allowlisted command service backs CLI and MCP.
+R3: Live commands execute only on Live's ControlSurface update_display main thread.
+R4: Loopback-only bridge authenticates every request using private local configuration.
+R5: Mutations require the current session ID and explicit write enablement; reject stale IDs.
+R6: Validate every batch before side effects. At most 32 operations and 4096 MIDI notes.
+R7: No automatic mutation retries. Duplicate request IDs replay the prior response, and
+different contents for an existing request ID fail. Partial application is reported honestly.
+R8: Inspect native compressed .als files read-only, with decompression limits and safe XML.
+R9: Invalid types, negative indices, nonfinite floats, invalid notes and unknown fields fail.
+R10: No file overwrites, arbitrary execution, save, delete, record, render or network exposure.
+R11: Read results are paginated; MCP calls reuse one process and bridge connections.
+R12: Real Live validation is separate from synthetic tests and never silently skipped as pass.
+R13: Proof Loop uses this requested public repository and retains check evidence. Protected
+criteria are excluded from builder editable scope; same-user protection is not independent custody.

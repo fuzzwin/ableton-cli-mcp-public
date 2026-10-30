@@ -1,0 +1,12 @@
+[
+  {"id":"offline-analysis","input":{"task":"analyze","request":"Check this bounce silently","source":"mix.wav"},"action":"ableton_audio_analyze","live":false,"blocked":false},
+  {"id":"offline-mix","input":{"task":"mix","request":"Improve kick and bass separation","source":"mix-plan.json"},"action":"ableton_mix","live":false,"blocked":false},
+  {"id":"single-master","input":{"task":"master","request":"Preserve the groove and punch","source":"premaster.wav"},"action":"ableton_master","live":false,"blocked":false},
+  {"id":"master-versions","input":{"task":"master_versions","request":"Compare open and dense directions","source":"versions.json"},"action":"ableton_master_versions","live":false,"blocked":false},
+  {"id":"missing-input","input":{"task":"sample_edit","request":"Trim a short one-shot"},"action":"ableton_sample_edit","live":false,"blocked":true},
+  {"id":"user-reference","input":{"task":"reference","request":"I like the bass and space, keep my melody","source":"brief.json","reference":"reference.wav"},"action":"ableton_reference","live":false,"blocked":false},
+  {"id":"inspect-live","input":{"task":"inspect_live","request":"Inspect the current Live set"},"action":"ableton_tracks","live":true,"blocked":false},
+  {"id":"style-only","input":{"task":"style","request":"Explore dub-techno textures","style":"dub techno"},"action":null,"live":false,"blocked":false},
+  {"id":"plugin-context","input":{"task":"mix","request":"Consider Diva only if useful","source":"mix.json","plugin_query":"Diva"},"action":"ableton_mix","live":false,"blocked":false},
+  {"id":"composition-limit","input":{"task":"compose","request":"Compose a complete new song in Live"},"action":null,"live":false,"blocked":true}
+]
