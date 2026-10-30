@@ -128,16 +128,6 @@ Each unique song folder contains ten full-length stems, a section map, editable 
 
 There are no artist recordings, copied hooks, vocals, sample packs, commercial VSTs or Live set templates in these recipes. Printed effects and ducking are in the audio. They are authored synthesis examples, not automatic “make any hit” or finished native `.als` generation. Use `--compose-only` to render stems/MIDI first, then call the CLI/MCP mix tool yourself.
 
-## Listen to the created songs
-
-Both tracks are original, two minutes long and available as 24-bit stereo WAV downloads (about 32 MB each). These listening downloads are private; sign in to GitHub with repository access.
-
-| Song | Style | Download |
-| --- | --- | --- |
-| **Horizon After Rain** | Spacious melodic house · 128 BPM | [Download WAV](https://github.com/fuzzwin/ableton-cli-mcp/releases/download/listening-demos-20261030/Horizon-After-Rain-Master.wav) |
-| **Signal in the Concrete** | Broken beats, acid bass and big-beat energy · 136 BPM | [Download WAV](https://github.com/fuzzwin/ableton-cli-mcp/releases/download/listening-demos-20261030/Signal-in-the-Concrete-Master.wav) |
-
-[Open the listening release](https://github.com/fuzzwin/ableton-cli-mcp/releases/tag/listening-demos-20261030) if a direct download does not open.
 
 ## 7. Watch progress and keep useful feedback
 
