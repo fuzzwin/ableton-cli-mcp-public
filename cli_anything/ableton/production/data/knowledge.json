@@ -371,6 +371,88 @@
       ],
       "summary": "Consult output-level and comparison controls when evaluating limiting.",
       "boundary": "This tool does not load or emulate Pro-L 2. Its profiles are independently authored starting points."
+    },
+    {
+      "id": "melody-contour",
+      "title": "Creating Melodies 1: Contour",
+      "url": "https://makingmusic.ableton.com/creating-melodies-1-contour",
+      "authority": "Ableton / Dennis DeSantis official production guide",
+      "applies_to": "Authored electronic melody; general compositional guidance",
+      "tools": [
+        "MIDI",
+        "piano roll",
+        "synthesizer"
+      ],
+      "styles": [
+        "any",
+        "melodic electronic"
+      ],
+      "topics": [
+        "melody",
+        "contour",
+        "phrase",
+        "voice leading"
+      ],
+      "summary": "Balance rising and falling motion, steps and leaps. Establish a recognizable phrase before developing a contrasting answer; resolve a leap with a step when it serves the phrase.",
+      "boundary": "Practical compositional suggestions, not an empirical guarantee of catchiness or a substitute for listening.",
+      "kind": "guide",
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "groove-syncopation-study",
+      "title": "Syncopation, Body-Movement and Pleasure in Groove Music",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094446",
+      "authority": "Witek et al. 2014, PLOS ONE; primary listener experiment",
+      "published": "2014-04-16",
+      "applies_to": "Ratings of the tested synthesized funk drum-break stimuli",
+      "tools": [
+        "drum programming",
+        "MIDI"
+      ],
+      "styles": [
+        "any",
+        "breakbeat",
+        "house",
+        "techno"
+      ],
+      "topics": [
+        "rhythm",
+        "groove",
+        "syncopation",
+        "melody"
+      ],
+      "summary": "In the tested drum breaks, medium syncopation received the highest movement and pleasure ratings. Preserve a readable pulse and choose a few displacement points rather than maximizing density.",
+      "boundary": "Production suggestion is an inference, not a universal target. The 2015 correction (doi:10.1371/journal.pone.0139409) fixes stimulus indexing/transcripts; authors state findings and interpretations are unchanged.",
+      "kind": "guide",
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "harmony-expectancy-study",
+      "title": "Uncertainty and Surprise Jointly Predict Musical Pleasure",
+      "url": "https://www.marcus-pearce.com/assets/papers/CheungEtAl2019.pdf",
+      "authority": "Cheung et al. 2019, Current Biology; primary paper on author website",
+      "published": "2019-12-02",
+      "applies_to": "Behavioral and fMRI experiments on Western tonal chord expectancy",
+      "tools": [
+        "MIDI",
+        "harmony",
+        "piano roll"
+      ],
+      "styles": [
+        "any",
+        "melodic electronic"
+      ],
+      "topics": [
+        "harmony",
+        "melody",
+        "expectation",
+        "variation",
+        "composition"
+      ],
+      "summary": "Pleasure depended on the interaction of prospective uncertainty and retrospective surprise, rather than a rule to maximize surprise. A production inference is to establish a phrase and reserve a deliberate contrast or cadence.",
+      "boundary": "The experiment concerns chords and expectancy, not a validated algorithm for writing melodies, genre authenticity, preset selection or mix quality. Listener taste remains individual.",
+      "kind": "guide",
+      "checked": "2026-10-30"
     }
   ]
 }

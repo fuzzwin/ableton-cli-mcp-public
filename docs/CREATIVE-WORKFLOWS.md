@@ -46,3 +46,12 @@ approximately −15.63 / −12.95 / −9.84 LUFS, with estimated true peaks near
 Their comparison copies matched near −15.63 LUFS. A separate reversed/faded
 400 ms sample and an 8-second reference brief were written without playback.
 Those historical local smoke results are not bundled in the public export. Current public demo measurements are in [DEMO-RESULTS.json](DEMO-RESULTS.json); audio/evidence stay ignored.
+
+
+## Composition before processing
+
+For a melody revision, retrieve `melody contour`, `groove syncopation` and `harmony expectancy` knowledge selectively. Write an identifiable phrase, its answer, rests, harmonic role and a deliberate point of tension/release before choosing effects. Keep the core motif audible across harmony changes; use changes of register, ending or rhythm deliberately rather than transposing a one-bar pattern automatically. These are authored decisions informed by the indexed sources, not a composition endpoint or a learned taste model.
+
+Assign one foreground role at a time. Give the acid answer, lead and chord bed distinct registers and note-gate space; choose drum displacements around a readable backbeat. Name the actual patch and version used. Installed presets require a successful non-silent render, not merely a preset name in state. The public sound-design endpoint still starts from the plugin-loaded state and accepts explicit controls; native Arturia factory-state conversion is a private authoring experiment, not an exposed preset-import feature.
+
+Make a short, privately delivered revision with editable MIDI and retained patch evidence. Preserve the rejected version and attach explicit user feedback to its evidence. Compare at matched loudness when useful, and ask the listener to judge the hook, groove and timbre. Technical checks cover decoding, peaks and source consistency; they cannot decide whether a melody is good.
