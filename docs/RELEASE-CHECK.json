@@ -1,0 +1,104 @@
+{
+  "version": "0.6.0",
+  "proof_loop_revision": "198a695186055eaaca6b5150f13521a90f29be79",
+  "run_id": "ableton-public-release-v3",
+  "candidate_sha256": "0586caa4d662ebdf0fb187ba6d9a158017f8b7d57aaeee3e0a5d159e563dbcd4",
+  "verification": {
+    "checked": [
+      "contract",
+      "transport"
+    ],
+    "failed": [],
+    "state": "pass"
+  },
+  "validation": {
+    "checked": [
+      "interfaces",
+      "production",
+      "creative",
+      "prompting",
+      "progress",
+      "public-release"
+    ],
+    "failed": [],
+    "state": "pass"
+  },
+  "acceptance": "not_accepted",
+  "freshness": {
+    "issues": [],
+    "state": "current"
+  },
+  "checks": [
+    {
+      "id": "contract",
+      "state": "pass",
+      "cases": 20,
+      "findings": []
+    },
+    {
+      "id": "transport",
+      "state": "pass",
+      "cases": 7,
+      "findings": []
+    },
+    {
+      "id": "interfaces",
+      "state": "pass",
+      "cases": 6,
+      "findings": []
+    },
+    {
+      "id": "production",
+      "state": "pass",
+      "cases": 25,
+      "findings": []
+    },
+    {
+      "id": "creative",
+      "state": "pass",
+      "cases": 13,
+      "findings": []
+    },
+    {
+      "id": "prompting",
+      "state": "pass",
+      "cases": 9,
+      "findings": []
+    },
+    {
+      "id": "progress",
+      "state": "pass",
+      "cases": 14,
+      "findings": []
+    },
+    {
+      "id": "public-release",
+      "state": "pass",
+      "cases": 6,
+      "findings": []
+    }
+  ],
+  "independent_review": {
+    "completed": true,
+    "repairs": "Fixed fail-closed export allowlist, package guide links and stale continuation docs; independently rechecked.",
+    "unresolved_blocking_findings": [],
+    "custody": "Same account; no independent acceptance custody"
+  },
+  "earlier_local_runs": [
+    {
+      "run_id": "ableton-public-release-v1",
+      "outcome": "Blocked: new test controls not declared protected; corrected contract."
+    },
+    {
+      "run_id": "ableton-public-release-v2",
+      "outcome": "Validation failed: export-check inputs missing from snapshot; complete scoped input list added."
+    }
+  ],
+  "speaker_playback": false,
+  "creative_acceptance": "pending",
+  "packaging": {
+    "wheel_sha256": "876cf52a5806a0ab3bbc12b9b29feefbf36c4f91b2c35118f7e08804908132ce",
+    "license_notice_included": true,
+    "packaged_source_and_guide_verified": true
+  }
+}
