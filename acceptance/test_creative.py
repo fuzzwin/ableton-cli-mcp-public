@@ -140,7 +140,7 @@ class Creative(unittest.TestCase):
     def test_mcp_workflows_exposed_and_strict(self):
         server=create_server(workspace=self.root)
         names=[t.name for t in asyncio.run(server.list_tools())]
-        self.assertEqual(len(names),22)
+        self.assertEqual(len(names),23)
         for name in ['ableton_methods','ableton_reference','ableton_sample_edit','ableton_master_versions']:
             self.assertIn(name,names)
         with self.assertRaises(Exception):

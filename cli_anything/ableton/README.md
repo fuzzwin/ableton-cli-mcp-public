@@ -13,6 +13,7 @@ A working local CLI and MCP connector for Ableton Live, with an optional file-ba
 - **Master and compare:** measured loudness/estimated true peak, named profiles and level-matched A/B files.
 - **Work from a reference:** selected passages, your mix goals and numerical comparisons.
 - **Edit samples:** trim, reverse, fades and gain to new audio files.
+- **Internal audio review:** timestamped section, rhythm and monophonic stem-pitch evidence, with explicit limits; silent signal analysis rather than perceptual hearing. [Guide](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/docs/INTERNAL-LISTEN.md).
 - **Know and design with your plugins:** version-aware capabilities, official sources, tested controls and bounded AU/VST3 MIDI/automation prints.
 - **Remember useful results:** local measured evidence and your explicit feedback; no model training.
 - **See progress:** actual backend stages, counts, elapsed time and warnings in a local dashboard.
@@ -30,7 +31,7 @@ mkdir -p production-workspace
 .venv/bin/cli-anything-ableton --help
 ```
 
-Point your MCP client at `.venv/bin/ableton-mcp --workspace /absolute/path/to/production-workspace`. See [mcp-config.example.json](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/mcp-config.example.json) and replace its absolute-path placeholders. With a workspace, **22 tools** are exposed by default. No model or API key is bundled; your compatible client supplies the assistant.
+Point your MCP client at `.venv/bin/ableton-mcp --workspace /absolute/path/to/production-workspace`. See [mcp-config.example.json](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/mcp-config.example.json) and replace its absolute-path placeholders. With a workspace, **23 tools** are exposed by default. No model or API key is bundled; your compatible client supplies the assistant.
 
 Try asking:
 
@@ -53,7 +54,7 @@ Open http://127.0.0.1:8788 to observe supported mix/master jobs. Synthesis progr
 
 Ask the assistant to use your installed instrument rather than inventing available tools. `ableton_plugin_context` joins versions, exact host outcomes, official manual links, capabilities and original recipes. `ableton_sound_design` prints a bounded MIDI/parameter/automation plan through one selected AU/VST3 into new audio and patch evidence. The assistant refreshes versioned sources online when needed; the context tool itself does not browse. [Setup, limits and examples](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/docs/PLUGIN-SOUND-DESIGN.md).
 
-The default workspace server now exposes **22 tools**. Reconnect an existing client to load new tools. Generated audio, local inventory and patch state remain private and outside public source.
+The default workspace server now exposes **23 tools**. Reconnect an existing client to load new tools. Generated audio, local inventory and patch state remain private and outside public source.
 
 **Observed Pigments setup:** VST3 5.0.1.4491 rendered through Pedalboard 0.9.26 with sorted MIDI and a 512-frame buffer. [Exact settings and evidence](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/docs/PLUGIN-SOUND-DESIGN.md#observed-working-pigments-vst3-setup). This is a tested host configuration; musical quality still needs listening feedback.
 

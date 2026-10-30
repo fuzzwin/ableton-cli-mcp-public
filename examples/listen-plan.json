@@ -1,0 +1,15 @@
+{
+  "source": "mix.wav",
+  "bpm": 128,
+  "focus": ["balance", "dynamics", "rhythm", "melody", "space", "arrangement"],
+  "sections": [
+    {"name": "Opening", "start": 0, "end": 30},
+    {"name": "Main section", "start": 30, "end": 60},
+    {"name": "Contrast", "start": 60, "end": 90},
+    {"name": "Return", "start": 90, "end": 120}
+  ],
+  "stems": [
+    {"name": "Dry lead", "path": "stems/lead.wav", "role": "lead", "monophonic": true},
+    {"name": "Sub", "path": "stems/sub.wav", "role": "bass", "monophonic": true}
+  ]
+}

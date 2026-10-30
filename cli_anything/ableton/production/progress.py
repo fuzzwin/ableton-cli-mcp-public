@@ -14,6 +14,7 @@ from .workspace import timestamp
 CURRENT = ContextVar("ableton_production_job", default=None)
 OBSERVER = ContextVar("ableton_production_observer", default=None)
 PLANS = {
+    "listen":[("preflight","Checking review inputs"),("analyze","Measuring bounced audio"),("stems","Inspecting declared stems"),("interpret","Building evidence and hypotheses"),("write","Writing review packet"),("record","Recording review evidence")],
     "analysis":[("preflight","Checking inputs"),("analyze","Reading and analyzing audio"),("record","Recording evidence")],
     "mix":[("preflight","Checking inputs"),("mix","Mixing stems"),("master","Mastering bounce"),("write","Writing new files"),("checks","Checking saved bounce"),("record","Recording evidence")],
     "master":[("preflight","Checking inputs"),("master","Mastering bounce"),("write","Writing new file"),("checks","Checking saved bounce"),("record","Recording evidence")],

@@ -166,6 +166,14 @@ def production_mix(ctx, plan_path):
     output(ctx, production_api(ctx).mix(plan_path))
 
 
+@production.command("listen")
+@click.argument("plan_path")
+@click.pass_context
+def production_listen(ctx, plan_path):
+    """Build a silent internal signal review from an explicit JSON plan."""
+    output(ctx, production_api(ctx).listen(plan_path))
+
+
 @production.command("master")
 @click.argument("path")
 @click.option("--target-lufs", type=float, default=-12.0)

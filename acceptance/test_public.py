@@ -113,7 +113,7 @@ class PublicRelease(unittest.TestCase):
         for target in re.findall(r'\]\(([^)]+)\)',text):
             if '://' not in target and not target.startswith('#'):
                 self.assertTrue((ROOT/target.split('#')[0]).is_file(),target)
-        self.assertIn('22 tools',text);self.assertIn('not a general composition endpoint',text)
+        self.assertIn('23 tools',text);self.assertIn('not a general composition endpoint',text)
         self.assertIn('No speakers',text);self.assertIn('Native editing is opt-in',text)
         self.assertIn('not model training',text);self.assertIn('perceptual',text)
 

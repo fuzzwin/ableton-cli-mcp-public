@@ -214,6 +214,11 @@ def create_server(client=None, allow_writes=False, workspace=None, allow_playbac
             return await run_production(ctx, production.analyze, path, reference)
 
         @server.tool(annotations=local_write)
+        async def ableton_listen(ctx: Context, plan_path: StrictStr) -> dict:
+            """Silent internal signal review of bounced audio: sections, rhythm candidates, declared monophonic lead/bass pitch and optional reference. Agent authors a relative JSON plan; all files stay in workspace. Writes a NEW review and measured recall event. No perceptual hearing, playback, quality score or automatic mix change. Reuse reviews while hashes are unchanged."""
+            return await run_production(ctx, production.listen, plan_path)
+
+        @server.tool(annotations=local_write)
         async def ableton_mix(ctx: Context, plan_path: StrictStr) -> dict:
             """Render an explicit JSON stem plan to NEW premaster/master files and record checks. Relative workspace paths; never changes sources or Live."""
             return await run_production(ctx, production.mix, plan_path)

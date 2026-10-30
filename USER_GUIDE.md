@@ -13,6 +13,7 @@ Describe the result you want in a compatible MCP assistant, or use the same tool
 | **Self-mixing** | Render an explicit plan for up to 24 aligned stems: gain, pan, high-pass, compression and kick-keyed ducking. Optional role balance is bounded to ±3 dB. |
 | **Mastering and A/B versions** | Render new masters with linked limiting, measured loudness/estimated true peak, named density profiles and level-matched comparison copies. |
 | **Reference-aware decisions** | Compare selected passages and save your notes about bass, width, dynamics or tonal balance. A reference is guidance; its audio is not copied into your music. |
+| **Internal listen mode** | Review bounced sections, rhythm candidates and pitch estimates from declared monophonic stems; keep measured evidence separate from musical hypotheses. This is silent signal analysis, not perceptual hearing. |
 | **Sample editing** | Trim, reverse, fade and change gain into a new WAV, including short one-shots. |
 | **Plugin context** | Index macOS AU/VST/VST3 metadata; explicitly probe one selected AU/VST3 in a file-only host. Installed, tested and usable in Live are different states. |
 | **Local learning** | Recall measured results and your explicit feedback from a local evidence ledger. This is useful memory, not model training. |
@@ -50,13 +51,18 @@ Add this server to your client's MCP configuration, replacing **both absolute pa
 }
 ```
 
-Restart/reload the client if required. With a workspace there are **22 tools** by default: six native readers plus sixteen production/preparation/progress tools. Without a workspace only the six readers are exposed. File tools do not need a bridge connection or Live running.
+Restart/reload the client if required. With a workspace there are **23 tools** by default: six native readers plus seventeen production/preparation/progress tools. Without a workspace only the six readers are exposed. File tools do not need a bridge connection or Live running.
 
 Try:
 
 > Analyze `mix.wav` inside the workspace. Check loudness, clipping, estimated true peak, mono compatibility and low-end width. Work silently and explain which decisions still need listening.
 
 Copy your audio into the workspace first. Tool paths are relative to it, not arbitrary paths elsewhere on your computer.
+
+For a timestamped internal review, ask: “Review `mix.wav` silently, using the dry
+lead and sub stems for melody diagnostics. Explain observations separately from
+proposed edits.” Your assistant can author [a listen plan](examples/listen-plan.json)
+and call `ableton_listen`. See [the mode's capabilities and limits](docs/INTERNAL-LISTEN.md).
 
 For a multi-step task:
 

@@ -25,6 +25,10 @@ class Production:
             return {"event_id": event_id, **result}
         return self.run("analysis",work)
 
+    def listen(self, plan_path):
+        from .listening import review
+        return self.run("listen", lambda: review(self.workspace, self.workspace.read_json(plan_path)))
+
     def mix(self, plan_path):
         from .render import render_mix
         return self.run("mix",lambda:render_mix(self.workspace, self.workspace.read_json(plan_path)))
