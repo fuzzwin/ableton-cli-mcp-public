@@ -453,6 +453,275 @@
       "boundary": "The experiment concerns chords and expectancy, not a validated algorithm for writing melodies, genre authenticity, preset selection or mix quality. Listener taste remains individual.",
       "kind": "guide",
       "checked": "2026-10-30"
+    },
+    {
+      "id": "kick-attack-body-tail",
+      "title": "Drop It: The Kick in Electronic Music",
+      "url": "https://www.ableton.com/en/blog/drop-it-kick-electronic-music/",
+      "authority": "Ableton / David Abravanel original guide",
+      "applies_to": "Electronic kick design; named tools require installed edition/version",
+      "tools": [
+        "Operator",
+        "Drum Buss",
+        "Saturator",
+        "EQ Eight"
+      ],
+      "topics": [
+        "kick",
+        "drums",
+        "transient",
+        "sample",
+        "decay"
+      ],
+      "summary": "Treat attack, body and tail as separate kick roles. A short transient and a long low body can demand different arrangement space.",
+      "boundary": "No universal kick preset, fundamental or decay time. The article does not establish that any named effect is available through this MCP.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "drum-layer-phase",
+      "title": "Enter the Temple of Boom: Acoustic Kicks",
+      "url": "https://www.ableton.com/en/blog/enter-temple-boom-acoustic-kicks/",
+      "authority": "Ableton; original engineer interviews",
+      "applies_to": "Recorded and sampled drum layering",
+      "tools": [
+        "Utility",
+        "sample editor"
+      ],
+      "topics": [
+        "kick",
+        "snare",
+        "layering",
+        "phase",
+        "polarity"
+      ],
+      "summary": "When combining drum sources, check their combined timing and polarity rather than choosing each in isolation.",
+      "boundary": "A polarity flip is not arbitrary phase alignment. A level or correlation metric cannot choose the best drum sound; numerical tests supplement later audition.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "bassline-musical-role",
+      "title": "Make basslines",
+      "url": "https://learningmusic.ableton.com/make-basslines/make-basslines.html",
+      "authority": "Ableton Learning Music",
+      "applies_to": "Bass composition, independent of instrument",
+      "tools": [
+        "MIDI",
+        "synthesizer"
+      ],
+      "topics": [
+        "bass",
+        "sub",
+        "rhythm",
+        "harmony"
+      ],
+      "summary": "Bass supports harmony and can relate to or contrast with the drums rhythmically.",
+      "boundary": "No promise that a root-only pattern or any frequency target makes a convincing bass line. Choose phrase rhythm and register musically.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "backbeat-vocabulary",
+      "title": "Backbeats",
+      "url": "https://learningmusic.ableton.com/make-beats/backbeats.html",
+      "authority": "Ableton Learning Music",
+      "applies_to": "4/4 rhythmic vocabulary",
+      "tools": [
+        "MIDI",
+        "Drum Rack"
+      ],
+      "topics": [
+        "drums",
+        "snare",
+        "clap",
+        "kick",
+        "rhythm"
+      ],
+      "summary": "Snare/clap on beats two and four is a common backbeat; four-on-the-floor kick is one contrasting vocabulary.",
+      "boundary": "These are examples, not mandatory genre templates. A sparse or halftime section can intentionally depart from them.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "hat-groove-velocity",
+      "title": "Using Grooves",
+      "url": "https://www.ableton.com/en/live-manual/11/using-grooves/",
+      "authority": "Ableton Live11 official manual",
+      "applies_to": "Live11; edition limits apply",
+      "tools": [
+        "Groove Pool",
+        "MIDI"
+      ],
+      "topics": [
+        "hats",
+        "swing",
+        "velocity",
+        "groove",
+        "timing"
+      ],
+      "summary": "Groove timing, velocity, randomization and quantization are separate controls; extracted grooves can retain a source timing pattern.",
+      "boundary": "Native Groove Pool/extraction are manual here. Randomizing every voice is not a validated substitute for intentional groove; no native extraction was executed.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "hat-choke-rack",
+      "title": "Instrument, Drum and Effect Racks",
+      "url": "https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/",
+      "authority": "Ableton Live11 official manual",
+      "applies_to": "Live11 Drum Rack",
+      "tools": [
+        "Drum Rack",
+        "Simpler"
+      ],
+      "topics": [
+        "hats",
+        "choke",
+        "sample",
+        "layering"
+      ],
+      "summary": "Chains in the same choke group silence one another when triggered; useful for open/closed hat behavior.",
+      "boundary": "Choke groups and rack chains are not exposed by the current native bridge. Offline sample gating must be authored explicitly.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "kick-bass-detector",
+      "title": "Side chain compression",
+      "url": "https://www.fabfilter.com/learn/compression/side-chain-compression",
+      "authority": "FabFilter / Maarten de Boer original educational article",
+      "applies_to": "General compressor detector principles, not a required plugin",
+      "tools": [
+        "Compressor",
+        "sidechain"
+      ],
+      "topics": [
+        "bass",
+        "kick",
+        "sidechain",
+        "dynamics",
+        "compression"
+      ],
+      "summary": "A separate detector source can control bass level when the kick hits. Very fast timing may distort slow bass waveforms.",
+      "boundary": "Choose recovery for the actual bass phrase; this source is not an installation claim, preset or universal millisecond target. File-envelope ducking is distinct from a native compressor.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "effects-time-controls",
+      "title": "Live11 delay and reverb control reference",
+      "url": "https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/",
+      "authority": "Ableton Live11 official manual",
+      "applies_to": "Live11 edition-specific effects",
+      "tools": [
+        "Delay",
+        "Echo",
+        "Reverb",
+        "Auto Filter",
+        "Utility"
+      ],
+      "topics": [
+        "effects",
+        "delay",
+        "reverb",
+        "predelay",
+        "filter",
+        "saturation",
+        "stereo",
+        "phase"
+      ],
+      "summary": "Tempo-sync delay divisions, feedback/filtering, reverb predelay/decay and Utility polarity are distinct documented controls.",
+      "boundary": "Consult exact device semantics before native edits. Private offline filtered delays/reverb do not prove native routing, plugin equivalence or perceptual mix quality.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
+    },
+    {
+      "id": "fullsong-dramatic-arc",
+      "title": "Dramatic Arc",
+      "url": "https://makingmusic.ableton.com/dramatic-arc",
+      "authority": "Ableton / Dennis DeSantis official production guide",
+      "applies_to": "Original arrangements at multiple time scales",
+      "tools": [
+        "MIDI",
+        "arrangement",
+        "automation"
+      ],
+      "topics": [
+        "arrangement",
+        "song",
+        "sections",
+        "contrast",
+        "automation",
+        "transitions"
+      ],
+      "summary": "Introduce material, build tension, reach a climax and release it. Texture and density changes can shape this progression.",
+      "boundary": "An authored arrangement strategy, not an empirical guarantee or automatic song-generation endpoint. Contrast should be audible in material, not labels alone.",
+      "kind": "guide",
+      "checked": "2026-10-30",
+      "styles": [
+        "any",
+        "electronic",
+        "house",
+        "breakbeat",
+        "techno"
+      ]
     }
   ]
 }

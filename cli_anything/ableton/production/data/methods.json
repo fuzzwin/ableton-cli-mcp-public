@@ -187,10 +187,243 @@
       "native_or_manual": [
         "Tonal artistry, codec delivery decisions and perceptual distortion assessment"
       ],
-      "compare": "Profiles vary this limiter’s targets and timing; they are not genre standards or vendor algorithms.",
+      "compare": "Profiles vary this limiter\u2019s targets and timing; they are not genre standards or vendor algorithms.",
       "sources": [
         "limiter-comparison",
         "live11-dynamics"
+      ]
+    },
+    {
+      "id": "kick-bass-pocket",
+      "topics": [
+        "kick",
+        "bass",
+        "sub",
+        "decay",
+        "sidechain"
+      ],
+      "intent": "Make low-end roles and note timing cooperate.",
+      "steps": [
+        "Choose which part owns the sustained low body, then compare kick tail against the bass note length.",
+        "Try one deliberate separation: shorter bass gate, changed onset, less low body or kick-keyed ducking.",
+        "Inspect bass recovery, mono/sub behavior and the loud section before the master."
+      ],
+      "execute_here": [
+        "mix: explicit gains/high-pass/compressor/ducking; audio_analyze: bands/mono/dynamics"
+      ],
+      "native_or_manual": [
+        "Kick synthesis/tuning, sample pitch and exact native compressor settings"
+      ],
+      "compare": "Level-match the same phrase; reject a move that weakens the intended groove even if headroom increases.",
+      "sources": [
+        "kick-attack-body-tail",
+        "bassline-musical-role",
+        "kick-bass-detector"
+      ]
+    },
+    {
+      "id": "snare-clap-layer",
+      "topics": [
+        "snare",
+        "clap",
+        "transient",
+        "layering",
+        "phase",
+        "polarity"
+      ],
+      "intent": "Give the backbeat body and snap without uncontrolled layering.",
+      "steps": [
+        "Pick one foundation sample; add only a complementary attack or texture if it serves the role.",
+        "Check summed mono timing and polarity; preserve both originals.",
+        "Set length and room send to leave the next hat/lead gesture clear."
+      ],
+      "execute_here": [
+        "sample_edit: trim/fades/gain; mix: explicit layer gain/pan; audio_analyze: mono diagnostics"
+      ],
+      "native_or_manual": [
+        "Polarity/time alignment, audition and choosing body/attack layers; authored private DSP is not a sample-alignment endpoint"
+      ],
+      "compare": "Compare the sum at matched level; a louder layer is not automatically a better snare.",
+      "sources": [
+        "backbeat-vocabulary",
+        "drum-layer-phase",
+        "live11-mixing"
+      ]
+    },
+    {
+      "id": "hat-pocket",
+      "topics": [
+        "hats",
+        "swing",
+        "choke",
+        "velocity",
+        "groove"
+      ],
+      "intent": "Build articulation and forward movement around the backbeat.",
+      "steps": [
+        "Choose a clear eighth/sixteenth subdivision and accent pattern.",
+        "Apply timing to selected offbeats and quieter replies; avoid randomizing every layer.",
+        "Shorten/choke open hats where the closed hat should interrupt them; vary density between sections."
+      ],
+      "execute_here": [
+        "sample_edit: selected trims/fades; mix: gains/pan"
+      ],
+      "native_or_manual": [
+        "MIDI rewrite, native Groove Pool and choke groups; private authored sample gating"
+      ],
+      "compare": "Judge pulse, harshness and space with the full groove, then inspect mono/peak behavior.",
+      "sources": [
+        "hat-groove-velocity",
+        "hat-choke-rack",
+        "groove-syncopation-study"
+      ]
+    },
+    {
+      "id": "loop-context",
+      "topics": [
+        "loop",
+        "loops",
+        "sample",
+        "samples",
+        "warp",
+        "slicing",
+        "bpm"
+      ],
+      "intent": "Choose a loop for a defined role and verify its timing.",
+      "steps": [
+        "Read source/usage provenance, header duration/rate and any filename tempo hint separately.",
+        "Confirm downbeat and musical length; a filename BPM is not detected tempo or verified pitch.",
+        "Choose native warp/slicing manually or use an exact-tempo local loop; retain the original and fade edit boundaries."
+      ],
+      "execute_here": [
+        "sample_edit: trim/reverse/fades/gain; audio_analyze: finite/length/peaks"
+      ],
+      "native_or_manual": [
+        "Native warp modes, transient slice mapping, BPM/key detection and licensed sample selection"
+      ],
+      "compare": "Check downbeat drift over the whole song and listen for transient/phase damage; do not equate resampling with pitch-preserving warp.",
+      "sources": [
+        "live11-warp",
+        "live11-simpler",
+        "live11-arrangement"
+      ]
+    },
+    {
+      "id": "filtered-room",
+      "topics": [
+        "reverb",
+        "predelay",
+        "room",
+        "depth",
+        "effects"
+      ],
+      "intent": "Place the backbeat and chords in a controlled space.",
+      "steps": [
+        "Choose a short room for cohesion or a longer tail for a breakdown; state its musical role.",
+        "Keep the source clear with a filtered send and deliberate predelay.",
+        "Reduce or duck the wet return when the next foreground phrase arrives."
+      ],
+      "execute_here": [
+        "mix: explicit bounced return stems and gain; sample_edit for printed variants"
+      ],
+      "native_or_manual": [
+        "General native routing/predelay/reverb controls; offline Pedalboard example is a private authored renderer, not a generic MCP effects endpoint"
+      ],
+      "compare": "Compare wet/dry at similar perceived level in dense and sparse sections.",
+      "sources": [
+        "effects-time-controls",
+        "live11-space",
+        "live11-mixing"
+      ]
+    },
+    {
+      "id": "rhythmic-delay-throws",
+      "topics": [
+        "delay",
+        "echo",
+        "throws",
+        "feedback",
+        "automation",
+        "effects"
+      ],
+      "intent": "Make echoes answer phrases rather than crowd every note.",
+      "steps": [
+        "Choose a tempo subdivision and a few phrase ends to feed it.",
+        "Filter and attenuate repeats; use a finite decay budget.",
+        "Change send amount for transitions while keeping the dry hook recognizable."
+      ],
+      "execute_here": [
+        "mix: pre-rendered delay return gains; sound_design: observed plugin controls only"
+      ],
+      "native_or_manual": [
+        "Native send automation, feedback routing and private finite tapped-delay authoring"
+      ],
+      "compare": "Inspect repeated peaks, tail boundaries and mono; listening decides whether the echoes support the rhythm.",
+      "sources": [
+        "effects-time-controls",
+        "live11-space",
+        "melody-contour"
+      ]
+    },
+    {
+      "id": "parallel-color",
+      "topics": [
+        "compression",
+        "saturation",
+        "parallel",
+        "distortion",
+        "transients",
+        "filter",
+        "effects"
+      ],
+      "intent": "Add body or texture while preserving the intended attack.",
+      "steps": [
+        "Name the missing role before processing.",
+        "Keep a dry source and make one filtered parallel color layer; match its level against bypass.",
+        "Recheck low-frequency buildup, transient loss and the whole phrase."
+      ],
+      "execute_here": [
+        "mix: bounced parallel layers and supported compressor controls"
+      ],
+      "native_or_manual": [
+        "Native Drum Buss/Saturator/parallel racks, transient shaping and private nonlinear DSP"
+      ],
+      "compare": "An increase in harmonics or RMS is not proof of better impact; retain the unprocessed version.",
+      "sources": [
+        "kick-attack-body-tail",
+        "live11-dynamics",
+        "live11-mixing"
+      ]
+    },
+    {
+      "id": "fullsong-contrast",
+      "topics": [
+        "song",
+        "arrangement",
+        "style",
+        "sections",
+        "bass",
+        "drums",
+        "automation",
+        "transitions"
+      ],
+      "intent": "Develop a full song through contrasting sections.",
+      "steps": [
+        "Use the requested length; local full-song authoring defaults to120seconds unless the user chooses another duration.",
+        "Plan distinct groove, bass, register, density and send changes; retain a recognizable motif.",
+        "Write transition fills and a supported ending, then render one complete private song before a bounded alternate."
+      ],
+      "execute_here": [
+        "prepare: guidance; methods/knowledge: selective retrieval; mix/master: authored bounced files"
+      ],
+      "native_or_manual": [
+        "Full composition, MIDI authoring and arrangement; no arbitrary full-song generation or native export endpoint"
+      ],
+      "compare": "Compare actual section notes/events and later audition the complete arc, not only a peak/loudness score.",
+      "sources": [
+        "fullsong-dramatic-arc",
+        "melody-contour",
+        "backbeat-vocabulary"
       ]
     }
   ]

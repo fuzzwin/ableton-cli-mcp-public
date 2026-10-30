@@ -37,8 +37,13 @@ class Creative(unittest.TestCase):
         return {'path':'mix.wav','intent':'Compare density and transient budget','versions':[{'name':p,'profile':p} for p in ['dynamic','balanced','dense']]}
 
     def test_methods_cover_workflow_with_source_boundaries(self):
-        methods = knowledge.methods()['methods']
-        self.assertEqual(len(methods), 7)
+        methods = knowledge.methods(limit=20)['methods']
+        original = {'edit-cleanly','sample-purpose','mix-priorities','effects-depth','style-laboratory','reference-brief','master-directions'}
+        expanded = {'kick-bass-pocket','snare-clap-layer','hat-pocket','loop-context','filtered-room','rhythmic-delay-throws','parallel-color','fullsong-contrast'}
+        identities = [item['id'] for item in methods]
+        self.assertEqual(set(identities), original | expanded)
+        self.assertEqual(len(identities), len(set(identities)))
+        self.assertEqual(len(knowledge.methods()['methods']), 8)
         for item in methods:
             for key in ['intent','steps','execute_here','native_or_manual','compare','sources']:
                 self.assertTrue(item[key])

@@ -167,3 +167,9 @@ Start with `ableton_plugin_context` and the musical goal, then fetch the linked 
 The assistant researches official sources; the context backend does not automatically search the web. New render outcomes are retained for recall. A successful waveform, complete patch audit, licensing and native Live support remain separate. Reconnect an existing MCP client to discover the new tools.
 
 The successful Pigments VST3 setup is recorded in the [verified setup table](docs/PLUGIN-SOUND-DESIGN.md#observed-working-pigments-vst3-setup), including version, host, buffer, MIDI stimulus and failure boundaries. Use that technical evidence as the starting point; keep your listening verdict separate.
+
+## Bass, drums and effects context
+
+Ask for a specific musical problem: “make space between kick and bass,” “a less crowded snare/clap,” “swung hats with choke,” “use a loop without losing transients,” or “phrase-end delay with a clear dry hook.” The connector can retrieve26 source cards and15 suggested methods through `ableton_knowledge` and `ableton_methods`. Each result names its sources, limitations and which steps need native/manual work.
+
+Full-song preparation defaults to two minutes with contrasting sections; an explicit duration overrides it. Describe the arc and the focal musical role. The tool can analyze and process authored bounced files, but this default does not add an arbitrary song-generation or native export endpoint. Plugin and sample availability must be verified locally. Musical quality remains a listening decision.
