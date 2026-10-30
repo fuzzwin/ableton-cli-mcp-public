@@ -32,6 +32,30 @@ New render folders contain FLOAT `design.wav`, the validated plan, generated opa
 
 `ableton_prepare(task="sound_design", ...)` routes to this plan and requests plugin context when a plugin query is given. The progress panel shows checking, rendering, saved-print checks and evidence recording. Findings enter the local ledger for later recall; human preference is never inferred from the numerical result.
 
+## Observed working Pigments VST3 setup
+
+The following setup produced a non-silent file render on the tested Mac. It is a reproducible starting point for this offline host, not a universal compatibility or sound-quality rating.
+
+| Setting | Observed value |
+| --- | --- |
+| Instrument | Pigments VST3 5.0.1.4491 |
+| Host | Pedalboard 0.9.26 |
+| Platform | macOS arm64, Python 3.13.15 |
+| Sample rate and output | 44,100 Hz, stereo, file only |
+| Render buffer | 512 frames in Pedalboard |
+| Initialization timeout | 10 seconds |
+| Preparation | Inspect host parameter metadata before rendering |
+| MIDI test | C4, note 60, velocity 100; note on at 0.1 s, off at 2.0 s; events sorted by time |
+| Test length and reset | 4 seconds; reset on the first processing call |
+| Starting patch | Loaded state with no explicit parameter overrides |
+| Result | 176,400 finite frames, nonzero peak about 0.15010 |
+
+The later custom-patch and official MCP tests also verified saved audio, complete parameter audit and hashed state snapshots. See [MCP smoke evidence](PLUGIN-MCP-SMOKE.json), [plugin smoke evidence](PLUGIN-SMOKE.json) and [scoped release checks](PLUGIN-RELEASE-CHECK.json).
+
+Use `ableton_plugin_context` to select the **tested VST3** entry, then `ableton_sound_design` for the explicit patch plan. The renderer already applies the sorted-MIDI and 512-frame conditions. Reconnect an older MCP connection to expose these tools. The buffer above belongs to the offline host.
+
+The AU attempt failed to scan in this host. An earlier VST3 attempt returned silence under different buffer/MIDI/metadata-initialization conditions; those differences do not isolate one cause. Licensing and native Live compatibility remain unverified. Musical quality remains subject to listening feedback.
+
 ## Observed host result
 
 On one macOS arm64/Python 3.13.15/Pedalboard 0.9.26 setup, installed Pigments VST3 5.0.1.4491 rendered a sorted C4 note at buffer512 with default parameters. Its AU alternate failed to scan. Earlier larger-buffer/unsorted-chord VST3 silence is preserved; the changed conditions do not isolate a single cause. A custom note with envelope/filter overrides and automation subsequently rendered with verified state hashes and complete control audit. These results do not establish licensing, arbitrary presets or native Live compatibility.

@@ -55,6 +55,8 @@ Ask the assistant to use your installed instrument rather than inventing availab
 
 The default workspace server now exposes **22 tools**. Reconnect an existing client to load new tools. Generated audio, local inventory and patch state remain private and outside public source.
 
+**Observed Pigments setup:** VST3 5.0.1.4491 rendered through Pedalboard 0.9.26 with sorted MIDI and a 512-frame buffer. [Exact settings and evidence](docs/PLUGIN-SOUND-DESIGN.md#observed-working-pigments-vst3-setup). This is a tested host configuration; musical quality still needs listening feedback.
+
 ## Clear boundaries
 
 Silent operation and read-only Live access are the defaults. Native mutations require opt-in on both sides; playback has a separate gate. Full native arrangement editing, instrument loading, recording, set saving and Live export are not implemented. The demo script is an authored example, not a general composition MCP endpoint.

@@ -50,7 +50,7 @@ Add this server to your client's MCP configuration, replacing **both absolute pa
 }
 ```
 
-Restart/reload the client if required. With a workspace there are **22 tools** by default: six native readers plus fourteen production/preparation/progress tools. Without a workspace only the six readers are exposed. File tools do not need a bridge connection or Live running.
+Restart/reload the client if required. With a workspace there are **22 tools** by default: six native readers plus sixteen production/preparation/progress tools. Without a workspace only the six readers are exposed. File tools do not need a bridge connection or Live running.
 
 Try:
 
@@ -165,3 +165,5 @@ Independent community implementation; not endorsed by Ableton or the named artis
 Start with `ableton_plugin_context` and the musical goal, then fetch the linked official manual for that installed major version when needed. The initial profiles cover Pigments 5 and Diva 1; unknown instruments need their own verified source. Author `examples/sound-design-plan.json` using the returned plugin ID and observed controls, then use `ableton_sound_design` to print a new file. Notes and automation use seconds; renders are limited to 30 seconds. No user-written JSON is required when the assistant can author the plan. See [plugin sound design](docs/PLUGIN-SOUND-DESIGN.md) for CLI commands, patch evidence and host limits.
 
 The assistant researches official sources; the context backend does not automatically search the web. New render outcomes are retained for recall. A successful waveform, complete patch audit, licensing and native Live support remain separate. Reconnect an existing MCP client to discover the new tools.
+
+The successful Pigments VST3 setup is recorded in the [verified setup table](docs/PLUGIN-SOUND-DESIGN.md#observed-working-pigments-vst3-setup), including version, host, buffer, MIDI stimulus and failure boundaries. Use that technical evidence as the starting point; keep your listening verdict separate.
