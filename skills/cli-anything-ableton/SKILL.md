@@ -49,8 +49,8 @@ different evidence. Note pagination limits response size but reads the native cl
 full note list. Do not claim realtime safety, rendered audio quality, deployed
 service status or independent Proof Loop acceptance from local passing tests.
 
-Production v0.2: supply --workspace /existing/directory to expose fourteen workspace
-MCP tools (20 total without Live edits). Use production analyze/mix/master/plugins/
+Production v0.2: supply --workspace /existing/directory to expose sixteen workspace
+MCP tools (22 total without Live edits). Use production analyze/mix/master/plugins/
 probe/knowledge/recall/feedback in the CLI. Paths are workspace-relative. Always
 inspect source provenance, plugin probe state and recent feedback before choosing
 tools. The mix plan is explicit JSON; outputs go to a new renders subdirectory.
@@ -92,3 +92,5 @@ item counts are observed work, not a time percentage. Needs_attention is a
 technical warning; stale/malformed state is unconfirmed. Do not report creative
 acceptance from completion. The MCP server has two production workers; status
 queries remain responsive. See docs/PRODUCTION-PROGRESS.md.
+
+Plugin sound design v0.7: use ableton_plugin_context for the selected installed plugin and musical goal. Fetch its official version-matched manual when needed; context retrieval itself does not browse. Unknown/mismatched versions need research. Author an explicit sound-design plan using observed host names, then ableton_sound_design renders one bounded instrument/MIDI/automation attempt to new FLOAT audio with state/parameter evidence. No arbitrary binaries, state imports, UI, playback or native Live loading. Installed and rendered evidence remain distinct.

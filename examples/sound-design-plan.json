@@ -1,0 +1,17 @@
+{
+  "plugin_id": "00000000000000000000",
+  "label": "Original moving acid",
+  "intent": "Replace plugin_id using context and choose observed controls before rendering",
+  "duration_seconds": 4.0,
+  "sample_rate": 44100,
+  "notes": [
+    {
+      "pitch": 41,
+      "start_seconds": 0.1,
+      "duration_seconds": 0.25,
+      "velocity": 110
+    }
+  ],
+  "parameters": {},
+  "automation": []
+}

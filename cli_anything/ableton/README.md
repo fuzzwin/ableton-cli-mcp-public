@@ -13,7 +13,7 @@ A working local CLI and MCP connector for Ableton Live, with an optional file-ba
 - **Master and compare:** measured loudness/estimated true peak, named profiles and level-matched A/B files.
 - **Work from a reference:** selected passages, your mix goals and numerical comparisons.
 - **Edit samples:** trim, reverse, fades and gain to new audio files.
-- **Know your plugins:** macOS metadata index plus explicit single-plugin AU/VST3 file probes.
+- **Know and design with your plugins:** version-aware capabilities, official sources, tested controls and bounded AU/VST3 MIDI/automation prints.
 - **Remember useful results:** local measured evidence and your explicit feedback; no model training.
 - **See progress:** actual backend stages, counts, elapsed time and warnings in a local dashboard.
 - **Try original music:** two reproducible two-minute demo recipes with stems, editable MIDI and actual harness mix/master outputs.
@@ -30,7 +30,7 @@ mkdir -p production-workspace
 .venv/bin/cli-anything-ableton --help
 ```
 
-Point your MCP client at `.venv/bin/ableton-mcp --workspace /absolute/path/to/production-workspace`. See [mcp-config.example.json](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/mcp-config.example.json) and replace its absolute-path placeholders. With a workspace, **20 tools** are exposed by default. No model or API key is bundled; your compatible client supplies the assistant.
+Point your MCP client at `.venv/bin/ableton-mcp --workspace /absolute/path/to/production-workspace`. See [mcp-config.example.json](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/mcp-config.example.json) and replace its absolute-path placeholders. With a workspace, **22 tools** are exposed by default. No model or API key is bundled; your compatible client supplies the assistant.
 
 Try asking:
 
@@ -47,6 +47,13 @@ File workflows run with Live closed. For native inspection, install the bridge w
 ```
 
 Open http://127.0.0.1:8788 to observe supported mix/master jobs. Synthesis progress prints to the terminal. **Horizon After Rain** explores spacious melodic house; **Signal in the Concrete** moves from swung broken beats to acid/bass and big-beat energy. Both are exactly two minutes, with ten stems and original MIDI. The recipes use original procedural synthesis, with no commercial sample/VST dependency. Audio outputs remain local and are ignored by Git.
+
+
+## Installed-plugin sound design (0.7.0)
+
+Ask the assistant to use your installed instrument rather than inventing available tools. `ableton_plugin_context` joins versions, exact host outcomes, official manual links, capabilities and original recipes. `ableton_sound_design` prints a bounded MIDI/parameter/automation plan through one selected AU/VST3 into new audio and patch evidence. The assistant refreshes versioned sources online when needed; the context tool itself does not browse. [Setup, limits and examples](https://github.com/fuzzwin/ableton-cli-mcp-public/blob/main/docs/PLUGIN-SOUND-DESIGN.md).
+
+The default workspace server now exposes **22 tools**. Reconnect an existing client to load new tools. Generated audio, local inventory and patch state remain private and outside public source.
 
 ## Clear boundaries
 

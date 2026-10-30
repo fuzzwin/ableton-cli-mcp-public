@@ -50,7 +50,7 @@ Add this server to your client's MCP configuration, replacing **both absolute pa
 }
 ```
 
-Restart/reload the client if required. With a workspace there are **20 tools** by default: six native readers plus fourteen production/preparation/progress tools. Without a workspace only the six readers are exposed. File tools do not need a bridge connection or Live running.
+Restart/reload the client if required. With a workspace there are **22 tools** by default: six native readers plus fourteen production/preparation/progress tools. Without a workspace only the six readers are exposed. File tools do not need a bridge connection or Live running.
 
 Try:
 
@@ -152,10 +152,16 @@ Tell your assistant “I prefer the dynamic version; the hats are too bright,”
 | Master needs attention | Read target and limiter-budget results. Try a more dynamic target; do not repeatedly push loudness to hide a warning. |
 | Panel says unconfirmed | Restore its connection or inspect the worker/heartbeat; do not assume completion. |
 
-No native arrangement editing, recording, plugin loading, set saving or Live audio export is implemented. Native warping and slicing-to-MIDI remain manual. File analysis does not hear music or certify commercial quality. Estimated 4× true peak is not a certified meter. Plugin child limits are not an OS sandbox. Existing native mutation batches use an undo group, not guaranteed automatic rollback.
+No native arrangement editing, recording, plugin loading inside Live, set saving or Live audio export is implemented. Native warping and slicing-to-MIDI remain manual. File analysis does not hear music or certify commercial quality. Estimated 4× true peak is not a certified meter. Plugin child limits are not an OS sandbox. Existing native mutation batches use an undo group, not guaranteed automatic rollback.
 
 ## Verification and credits
 
 Run `uv run --locked --extra audio python -m unittest discover -s acceptance -v`. Synthetic unit/integration checks are separate from hardware/plugin compatibility and your creative listening verdict. Proof Loop check reports preserve `acceptance: not_accepted`; read [verification](docs/VERIFICATION.md).
 
 Independent community implementation; not endorsed by Ableton or the named artists. The harness method and REPL skin come from [CLI-Anything](https://github.com/HKUDS/CLI-Anything); evidence checks use [Proof Loop](https://github.com/fuzzwin/proof-loop-public). Original code is Apache-2.0; see [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## 8. Design sounds with an installed plugin
+
+Start with `ableton_plugin_context` and the musical goal, then fetch the linked official manual for that installed major version when needed. The initial profiles cover Pigments 5 and Diva 1; unknown instruments need their own verified source. Author `examples/sound-design-plan.json` using the returned plugin ID and observed controls, then use `ableton_sound_design` to print a new file. Notes and automation use seconds; renders are limited to 30 seconds. No user-written JSON is required when the assistant can author the plan. See [plugin sound design](docs/PLUGIN-SOUND-DESIGN.md) for CLI commands, patch evidence and host limits.
+
+The assistant researches official sources; the context backend does not automatically search the web. New render outcomes are retained for recall. A successful waveform, complete patch audit, licensing and native Live support remain separate. Reconnect an existing MCP client to discover the new tools.

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cli-anything-ableton"
-version = "0.6.0"
+version = "0.7.0"
 description = "Local Ableton Live CLI and MCP tools backed by a main-thread Remote Script"
 license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE", "licenses/*.txt", "THIRD_PARTY_NOTICES.md"]

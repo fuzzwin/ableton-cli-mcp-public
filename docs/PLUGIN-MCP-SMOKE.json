@@ -1,0 +1,24 @@
+{
+  "version": "0.7.0",
+  "official_sdk_stdio": true,
+  "workspace_tools": 22,
+  "native_mutation_exposed": false,
+  "plugin": "Pigments VST3 5.0.1.4491",
+  "context_version_match": true,
+  "sound_design": {
+    "status": "rendered",
+    "technical_pass": true,
+    "patch_evidence_complete": true,
+    "buffer_size": 512,
+    "source_plan_preserved": true
+  },
+  "audio": {
+    "sha256": "ab88db7fd5009ffd7d1cba8cec1b7ebd2dcd0fa4d81eb9dd6e733568e0a298dc",
+    "duration_seconds": 2.0,
+    "finite": true,
+    "clipped_samples": 0
+  },
+  "progress_notifications": 7,
+  "speaker_playback": false,
+  "perceptual_listening": false
+}

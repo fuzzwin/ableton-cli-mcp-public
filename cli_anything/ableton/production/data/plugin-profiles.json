@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "checked": "2026-10-30",
+  "profiles": [
+    {
+      "id": "pigments5",
+      "names": [
+        "pigments"
+      ],
+      "major_versions": [
+        5
+      ],
+      "capabilities": [
+        "Analog, wavetable, sample/granular and harmonic engines; utility oscillator/noise",
+        "Dual filters, envelopes/LFOs/functions and performance macros",
+        "Internal effects and sequencer/arpeggiator; version5 external-audio capability needs suitable host routing"
+      ],
+      "sources": [
+        {
+          "url": "https://dl.arturia.net/products/pigments/manual/pigments_Manual_5_0_0_EN.pdf",
+          "title": "Pigments 5 manual",
+          "version": "5.0.0",
+          "checked": "2026-10-30",
+          "authority": "Arturia",
+          "sections": [
+            "Sound engines",
+            "Filters",
+            "Modulation",
+            "FX",
+            "Sequencer"
+          ]
+        },
+        {
+          "url": "https://forum.arturia.com/t/introducing-pigments-5-free-update-for-pigments-owners/2975",
+          "title": "Pigments 5 official announcement",
+          "version": "5",
+          "checked": "2026-10-30",
+          "authority": "Arturia"
+        }
+      ],
+      "recipes": [
+        {
+          "name": "Moving acid phrase",
+          "goal": "acid breakbeat bass techno",
+          "steps": [
+            "Start with a single analog-style source and a resonant low-pass filter.",
+            "Use a short amplitude gate and a fast-decaying filter envelope; vary cutoff and accents across the phrase.",
+            "Keep fundamental sub separately centered; print a short note test before a full phrase."
+          ],
+          "host_controls": [
+            "f1_cutoff_hz",
+            "f1_resonance",
+            "env_vca_attack_ms",
+            "env_vca_decay_s",
+            "env_vca_sustain",
+            "env_vca_release_s",
+            "master_volume_db"
+          ]
+        },
+        {
+          "name": "Chopped emotional keys",
+          "goal": "melodic house garage chopped keys",
+          "steps": [
+            "Build a voiced minor/add9 phrase from a restrained analog or wavetable layer.",
+            "Use short amplitude envelopes, selective rests and a filtered delay rather than a continuous pad.",
+            "Map two audible changes to macros and compare the printed phrase at matched level."
+          ],
+          "host_controls": [
+            "env_vca_attack_ms",
+            "env_vca_decay_s",
+            "env_vca_sustain",
+            "env_vca_release_s",
+            "macro_1",
+            "macro_2"
+          ]
+        },
+        {
+          "name": "Air and motion",
+          "goal": "ambient texture pad sound design",
+          "steps": [
+            "Layer a harmonically simple bed with quiet wavetable or granular motion.",
+            "High-pass the wide texture so the sub stays clear.",
+            "Use slow modulation, then verify mono fold and low-band width after printing."
+          ],
+          "host_controls": [
+            "wavetable_1_position",
+            "lfo_1_frequency_hz",
+            "macro_1",
+            "voice_pan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diva1",
+      "names": [
+        "diva"
+      ],
+      "major_versions": [
+        1
+      ],
+      "capabilities": [
+        "Mix-and-match analogue-modelled oscillators, filters and envelopes",
+        "Resonant filters, glide and velocity modulation for expressive bass phrases",
+        "Two LFOs, arpeggiator and stereo effects; verify controls in the installed build"
+      ],
+      "sources": [
+        {
+          "url": "https://u-he.com/products/diva/",
+          "title": "Diva official product and module documentation",
+          "version": "1.x; do not assume later-build features",
+          "checked": "2026-10-30",
+          "authority": "u-he"
+        }
+      ],
+      "recipes": [
+        {
+          "name": "Acid with accents",
+          "goal": "acid breakbeat techno bass",
+          "steps": [
+            "Use legato glide with a short gate and strong filter-envelope movement.",
+            "Vary resonance and cutoff across the phrase, preserving kick/sub space.",
+            "Print only the explicit patch and keep applied values with the MIDI."
+          ],
+          "host_controls": [
+            "mode",
+            "glide",
+            "frequency",
+            "resonance",
+            "freqmoddepth",
+            "attack",
+            "decay",
+            "sustain",
+            "release",
+            "velocity"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorship": "Capability summaries refer to official versioned sources. Recipe steps are original suggestions, not vendor/artist presets or exact genre formulas."
+}

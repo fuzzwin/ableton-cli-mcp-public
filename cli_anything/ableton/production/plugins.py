@@ -106,6 +106,11 @@ def inventory(workspace, refresh=False):
                 and probe.get("host") == current_host
                 and probe.get("python") == platform.python_version()):
             p["offline_status"], p["probe"] = before["offline_status"], before["probe"]
+        design=before.get("design_evidence",{})
+        if (before.get("metadata_fingerprint")==p["metadata_fingerprint"] and design
+                and design.get("architecture")==platform.machine() and design.get("host")==current_host
+                and design.get("python")==platform.python_version()):
+            p["design_evidence"]=design
     tmp = path.with_name("plugins-" + uuid.uuid4().hex + ".tmp")
     write_json(tmp, current)
     os.replace(tmp, path)

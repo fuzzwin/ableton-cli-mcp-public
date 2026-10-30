@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "goal": "Fresh public source release with portable capability-first guide and original silent two-minute melodic-house and broken-beat/acid demo recipes. Preserve private history, runtime data and all original audio. Existing connector checks pass; native mutation and creative acceptance remain unclaimed.",
+  "goal": "Installed-plugin context joins observed host/version evidence to official major-version capability cards; bounded instrument sound-design plans render exact MIDI and parameter automation into new silent file outputs with auditable state and failures. Preserve all existing bridge/file/creative/prompt/progress/public checks. Private musical demonstrations are separately recorded evidence, not perceptual or native acceptance.",
   "files": [
     ".github/workflows/tests.yml",
     ".gitignore",
@@ -17,6 +17,7 @@
     "acceptance/PROMPT-REQUIREMENTS.md",
     "acceptance/PUBLIC-REQUIREMENTS.md",
     "acceptance/REQUIREMENTS.txt",
+    "acceptance/SOUND-DESIGN-REQUIREMENTS.md",
     "acceptance/TEST.md",
     "acceptance/prompt-cases.json",
     "acceptance/test_contract.py",
@@ -26,6 +27,7 @@
     "acceptance/test_progress.py",
     "acceptance/test_prompting.py",
     "acceptance/test_public.py",
+    "acceptance/test_sound_design.py",
     "acceptance/test_transport.py",
     "cli_anything/ableton/README.md",
     "cli_anything/ableton/__init__.py",
@@ -45,12 +47,15 @@
     "cli_anything/ableton/production/data/knowledge.json",
     "cli_anything/ableton/production/data/knowledge.schema.json",
     "cli_anything/ableton/production/data/methods.json",
+    "cli_anything/ableton/production/data/plugin-profiles.json",
+    "cli_anything/ableton/production/design_worker.py",
     "cli_anything/ableton/production/knowledge.py",
     "cli_anything/ableton/production/ledger.py",
     "cli_anything/ableton/production/plugins.py",
     "cli_anything/ableton/production/probe_worker.py",
     "cli_anything/ableton/production/progress.py",
     "cli_anything/ableton/production/render.py",
+    "cli_anything/ableton/production/sound_design.py",
     "cli_anything/ableton/production/workflows.py",
     "cli_anything/ableton/production/workspace.py",
     "cli_anything/ableton/service.py",
@@ -62,6 +67,7 @@
     "docs/DEMO-RESULTS.json",
     "docs/INVOCATION-PROMPT.md",
     "docs/NATIVE-CAPABILITIES.md",
+    "docs/PLUGIN-SOUND-DESIGN.md",
     "docs/PRODUCTION-PROGRESS.md",
     "docs/PUBLIC-README.md",
     "docs/VERIFICATION.md",
@@ -69,6 +75,7 @@
     "examples/master-versions-plan.json",
     "examples/reference-plan.json",
     "examples/sample-edit-plan.json",
+    "examples/sound-design-plan.json",
     "examples/stem-plan.json",
     "examples/task-request.json",
     "examples/tempo.json",
@@ -141,7 +148,12 @@
     "docs/NATIVE-CAPABILITIES.md",
     "docs/VERIFICATION.md",
     "docs/DEMO-RESULTS.json",
-    "docs/DEMO-MCP-CHECK.json"
+    "docs/DEMO-MCP-CHECK.json",
+    "cli_anything/ableton/production/sound_design.py",
+    "cli_anything/ableton/production/design_worker.py",
+    "cli_anything/ableton/production/data/plugin-profiles.json",
+    "examples/sound-design-plan.json",
+    "docs/PLUGIN-SOUND-DESIGN.md"
   ],
   "protected": [
     "acceptance/REQUIREMENTS.txt",
@@ -162,7 +174,9 @@
     "acceptance/PROGRESS-REQUIREMENTS.md",
     "acceptance/test_progress.py",
     "acceptance/PUBLIC-REQUIREMENTS.md",
-    "acceptance/test_public.py"
+    "acceptance/test_public.py",
+    "acceptance/test_sound_design.py",
+    "acceptance/SOUND-DESIGN-REQUIREMENTS.md"
   ],
   "requirements": [
     "acceptance/REQUIREMENTS.txt",
@@ -170,7 +184,8 @@
     "acceptance/CREATIVE-REQUIREMENTS.md",
     "acceptance/PROMPT-REQUIREMENTS.md",
     "acceptance/PROGRESS-REQUIREMENTS.md",
-    "acceptance/PUBLIC-REQUIREMENTS.md"
+    "acceptance/PUBLIC-REQUIREMENTS.md",
+    "acceptance/SOUND-DESIGN-REQUIREMENTS.md"
   ],
   "checks": [
     {
@@ -474,6 +489,40 @@
         "test_public.PublicRelease.test_recipes_have_distinct_full_length_section_maps",
         "test_public.PublicRelease.test_standard_midi_timing_channels_and_no_stuck_notes",
         "test_public.PublicRelease.test_user_guide_local_links_and_capability_boundaries"
+      ]
+    },
+    {
+      "id": "sound-design",
+      "purpose": "validation",
+      "criterion": "Version-aware context, explicit bounded MIDI/patch worker, persistent partial/failure evidence and official MCP workflow pass",
+      "adapter": "command-json",
+      "argv": [
+        "{python}",
+        "{workspace}/scripts/proof_check.py",
+        "test_sound_design.py"
+      ],
+      "controls": [
+        "acceptance/SOUND-DESIGN-REQUIREMENTS.md",
+        "acceptance/test_sound_design.py",
+        "scripts/proof_check.py",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "coverage": [
+        "test_sound_design.SoundDesign.test_boolean_proxy_readback_is_a_boolean",
+        "test_sound_design.SoundDesign.test_context_is_version_matched_and_does_not_load_plugin",
+        "test_sound_design.SoundDesign.test_malformed_child_result_is_persisted_and_incomplete_evidence_warns",
+        "test_sound_design.SoundDesign.test_malformed_nested_child_evidence_is_recorded_without_success",
+        "test_sound_design.SoundDesign.test_nonfinite_host_conversion_is_rejected_before_any_write",
+        "test_sound_design.SoundDesign.test_official_sdk_exposes_plugin_workflow",
+        "test_sound_design.SoundDesign.test_parent_preserves_timeout_and_silent_outcomes_without_retry",
+        "test_sound_design.SoundDesign.test_parent_verifies_actual_shape_and_source_hash",
+        "test_sound_design.SoundDesign.test_partial_failure_keeps_applied_control_and_snapshot_evidence",
+        "test_sound_design.SoundDesign.test_plan_bounds_and_no_ambiguous_notes",
+        "test_sound_design.SoundDesign.test_preparation_routes_sound_design_and_selects_context",
+        "test_sound_design.SoundDesign.test_selected_plugin_rejects_changed_external_and_vst2",
+        "test_sound_design.SoundDesign.test_unknown_parameter_and_host_range_fail_before_print",
+        "test_sound_design.SoundDesign.test_worker_applies_controls_and_sorts_retriggers_without_playback"
       ]
     }
   ],

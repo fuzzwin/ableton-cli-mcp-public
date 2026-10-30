@@ -15,7 +15,7 @@ async def probe(workspace, master):
             await session.initialize()
             tools = await session.list_tools()
             names = [t.name for t in tools.tools]
-            assert len(names) == 20 and "ableton_apply" not in names
+            assert len(names) == 22 and "ableton_apply" not in names
             results = {}
             for name, args in [("ableton_audio_analyze", {"path":master}),
                                ("ableton_plugin_inventory", {"query":"Diva"}),

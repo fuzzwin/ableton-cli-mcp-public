@@ -233,6 +233,16 @@ def create_server(client=None, allow_writes=False, workspace=None, allow_playbac
             """Explicitly load ONE indexed VST3/AU in a bounded child and render a test file. May trigger vendor licensing UI. No audio output device; native Live remains unverified."""
             return await run_production(ctx, production.probe, plugin_id)
 
+        @server.tool(annotations=local_write)
+        async def ableton_plugin_context(ctx: Context, query: StrictStr, goal: StrictStr = "", refresh: StrictBool = False, limit: StrictInt = 8) -> dict:
+            """Join installed plugin/version and exact host evidence to official versioned capabilities, authored recipes and observed controls. Does not browse: fetch the returned official manual for changed/new claims before patching. No plugin code is loaded here."""
+            return await run_production(ctx, production.plugin_context, query, goal, refresh, limit)
+
+        @server.tool(annotations=local_write)
+        async def ableton_sound_design(ctx: Context, plan_path: StrictStr) -> dict:
+            """Render ONE explicit indexed AU/VST3 instrument plan to new FLOAT WAV and patch evidence. Up to 30 seconds, 1024 sorted MIDI notes, 32 parameters and 128 automation changes; bounded child, no UI/output device/native Live mutation. Read plugin context and official manual first; no arbitrary executable/state paths."""
+            return await run_production(ctx, production.sound_design, plan_path)
+
         @server.tool(annotations=read)
         def ableton_knowledge(query: StrictStr, limit: StrictInt = 8, include_artist_examples: StrictBool = False) -> dict:
             """Retrieve versioned guide/source cards by tool, topic or style. Artist examples are optional. Refresh current claims from their primary URLs."""

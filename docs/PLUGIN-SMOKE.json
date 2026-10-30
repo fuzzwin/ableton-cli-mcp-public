@@ -1,0 +1,58 @@
+{
+  "version": "0.7.0",
+  "official_sources_checked": [
+    "https://dl.arturia.net/products/pigments/manual/pigments_Manual_5_0_0_EN.pdf",
+    "https://forum.arturia.com/t/introducing-pigments-5-free-update-for-pigments-owners/2975",
+    "https://u-he.com/products/diva/"
+  ],
+  "real_plugin": "Pigments VST3 5.0.1.4491",
+  "host": "pedalboard 0.9.26",
+  "architecture": "arm64",
+  "python": "3.13.15",
+  "final_custom_note": {
+    "status": "rendered",
+    "technical_pass": true,
+    "patch_evidence_complete": true,
+    "source_plan_preserved": true,
+    "audio": {
+      "sha256": "d3faa1ed60d1a50a18cf8c250c94bc836215779fa9f31febd48d909c3e4b1623",
+      "duration_seconds": 4.0,
+      "clipped_samples": 0,
+      "finite": true
+    },
+    "states": [
+      {
+        "file": "patch-start.bin",
+        "sha256": "aecb28a35665b7f1d64a80b3008ed003ec9187965ce217c8a8022987990d3cbb"
+      },
+      {
+        "file": "patch-end.bin",
+        "sha256": "784a130cbb83a87eea1df3c5efe85f91929f97cd7b751816351deafb7194cdad"
+      }
+    ]
+  },
+  "earlier_default_conditions": "Sorted mono C4 note at buffer512 with unchanged parameters rendered. AU failed scanning. Larger-buffer/unsorted-chord silence preceded this; a single cause was not isolated.",
+  "private_music_demo": {
+    "title": "Voltage Drift Acid Breakbeat Edit",
+    "seconds": 30,
+    "bpm": 136,
+    "actual_prints": [
+      "acid",
+      "keys"
+    ],
+    "source_bed_hashes_preserved": true,
+    "master": {
+      "sha256": "b5e88dde1d0ee1a515ad7cc63c5dbf55a2d10883872e27bb157c95407044d5d9",
+      "duration_seconds": 30.0,
+      "integrated_lufs": -12.260296330134691,
+      "true_peak_4x_dbtp_estimate": -1.0000002900227403,
+      "clipped_samples": 0
+    },
+    "evidence_scope": "Musical prints preceded final audit-schema repairs; final custom note above separately verifies the complete hashed-state schema."
+  },
+  "native_live_compatibility": "unverified",
+  "license_state": "not inferred",
+  "speaker_playback": false,
+  "perceptual_listening": false,
+  "creative_acceptance": "pending"
+}

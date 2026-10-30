@@ -73,3 +73,11 @@ class Production:
 
     def progress(self, job_id=None, limit=8):
         return read_jobs(self.workspace,job_id,limit)
+
+    def plugin_context(self,query,goal="",refresh=False,limit=8):
+        from .sound_design import context
+        return context(self.workspace,query,goal,refresh,limit)
+
+    def sound_design(self,plan_path):
+        from .sound_design import render
+        return self.run("sound_design",lambda:render(self.workspace,plan_path))

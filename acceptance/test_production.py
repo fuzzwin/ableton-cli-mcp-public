@@ -285,7 +285,7 @@ class Production(unittest.TestCase):
                 names = [t.name for t in (await session.list_tools()).tools]
                 self.assertIn("ableton_mix", names)
                 self.assertNotIn("ableton_apply", names)
-                self.assertEqual(len(names), 20)
+                self.assertEqual(len(names), 22)
                 report = await session.call_tool("ableton_audio_analyze", {"path":"tone.wav"})
                 self.assertFalse(report.isError, str(report))
                 result = json.loads(report.content[0].text)

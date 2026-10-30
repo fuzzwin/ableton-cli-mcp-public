@@ -192,6 +192,22 @@ def production_probe(ctx, plugin_id):
     output(ctx, production_api(ctx).probe(plugin_id))
 
 
+@production.command("plugin-context")
+@click.argument("query")
+@click.option("--goal",default="")
+@click.option("--refresh",is_flag=True)
+@click.pass_context
+def production_plugin_context(ctx,query,goal,refresh):
+    output(ctx,production_api(ctx).plugin_context(query,goal,refresh))
+
+
+@production.command("sound-design")
+@click.argument("plan_path")
+@click.pass_context
+def production_sound_design(ctx,plan_path):
+    output(ctx,production_api(ctx).sound_design(plan_path))
+
+
 @production.command("knowledge")
 @click.argument("query")
 @click.option("--artist-examples", is_flag=True)

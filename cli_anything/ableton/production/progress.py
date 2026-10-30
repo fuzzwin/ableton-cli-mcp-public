@@ -21,6 +21,7 @@ PLANS = {
     "reference":[("preflight","Checking inputs"),("analyze","Measuring selected passages"),("write","Writing reference brief"),("record","Recording evidence")],
     "master_versions":[("preflight","Checking inputs"),("versions","Rendering and checking versions"),("comparisons","Writing matched comparisons"),("record","Recording version history")],
     "inventory":[("preflight","Checking request"),("inventory","Reading plugin context")],
+    "sound_design":[("preflight","Checking plugin and patch plan"),("render","Rendering plugin sound design"),("checks","Checking plugin print"),("record","Recording patch evidence")],
     "probe":[("preflight","Checking selected plugin"),("render","Rendering test file"),("record","Recording plugin outcome")],
 }
 
@@ -137,7 +138,7 @@ class Job:
 
     def outcome(self, result):
         self.data["result"]={k:result[k] for k in ("event_id","output_directory","output_path","status","technical_pass") if k in result}
-        warning=(result.get("technical_pass") is False or result.get("source_preserved") is False
+        warning=(result.get("technical_pass") is False or result.get("source_preserved") is False or result.get("source_plan_preserved") is False
                  or result.get("source_files_preserved") is False
                  or result.get("status") in {"load_error","timeout","silent_or_invalid"})
         decisions=[result["mastering"]] if "mastering" in result else [v["decisions"] for v in result.get("versions",[])]

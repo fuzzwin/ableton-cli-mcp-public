@@ -1,5 +1,8 @@
 # Public release verification
 
+Current source 0.7.0 adds installed-plugin context and bounded sound design; its scoped suite contains 114 cases (100 prior cases plus 14 sound-design cases). See docs/PLUGIN-SOUND-DESIGN.md for execution limits. Earlier 0.6.0 release reports remain historical evidence for their own hashes; they do not cover changed source. The separate actual musical edit is a private file artifact, not perceptual or native Live acceptance.
+
+
 Version 0.6.0 is a fresh public source snapshot. Private Git history, identity-bearing local reports/configs, audio, inventories, feedback and runtime jobs are excluded. Original source is Apache-2.0, with CLI-Anything provenance/license retained.
 
 The automated suite covers native schema/gating with synthetic Live objects, real local TCP/stdio/official MCP clients, constrained file DSP, source preservation, reference/sample/master variants, preparation and observed progress. Release checks additionally inspect the public export allowlist/manifest, portable guide links, MIDI note timing and non-overwrite behavior.
