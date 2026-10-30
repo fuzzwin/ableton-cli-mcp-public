@@ -147,6 +147,11 @@ The example script's synthesis prints its instrument count to the terminal. The 
 
 Tell your assistant “I prefer the dynamic version; the hats are too bright,” and ask it to attach that feedback to the correct event. Future recall can use that preference. No preference is inferred from a numerical pass. There is no bundled scheduled service; recurring reviews must be configured explicitly by the user.
 
+For a reusable map of what worked, failed and remains unproven, use the
+[evidence learning agent workflow](docs/LEARNING-AGENT.md). `ableton_prepare`
+with `task: "learn"` now retrieves learning-map context. Your client runs the
+selected worker; the connector does not select a model or retrain it.
+
 ## Troubleshooting and honest boundaries
 
 | Symptom | Next step |

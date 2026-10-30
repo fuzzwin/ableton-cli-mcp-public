@@ -68,3 +68,8 @@ Missing JSON plans belong to the agent: author them from known assets/settings.
 Only missing audio or essential musical decisions should require user input.
 
 Sound design v0.7 adds a bounded route with a JSON patch plan and conditional installed-plugin context. The assistant must fetch versioned official sources for new claims before selecting controls; the context tool is not a browser.
+
+For accumulated project lessons, use `task: "learn"`; its selective context now
+includes `ableton_recall` with query `learning-map` and limit3. See the
+[learning worker workflow](LEARNING-AGENT.md). Model selection belongs to the
+client. A learning map is reference data and does not execute or retrain an agent.

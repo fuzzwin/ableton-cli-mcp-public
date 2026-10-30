@@ -80,8 +80,8 @@ def prepare(raw, *, workspace_enabled=True, allow_writes=False, allow_playback=F
     if workspace_enabled and route["method"]:
         context.append({"tool":"ableton_methods", "arguments":{"query":route["method"], "limit":2},
                         "why":"Load only relevant methods; these include source links and execution boundaries."})
-    if workspace_enabled and spec.task in {"mix", "master", "master_versions", "sample_edit", "reference", "style", "compose", "sound_design", "listen"}:
-        context.append({"tool":"ableton_recall", "arguments":{"query":spec.style or spec.task.replace("_", " "), "limit":3},
+    if workspace_enabled and spec.task in {"mix", "master", "master_versions", "sample_edit", "reference", "style", "compose", "sound_design", "listen", "learn"}:
+        context.append({"tool":"ableton_recall", "arguments":{"query":"learning-map" if spec.task == "learn" else spec.style or spec.task.replace("_", " "), "limit":3},
                         "why":"Use relevant measured outcomes and separately labelled user feedback; current user intent takes priority."})
     if workspace_enabled and spec.plugin_query:
         context.append({"tool":"ableton_plugin_context", "arguments":{"query":spec.plugin_query, "goal":(spec.style or spec.request)[:1000], "limit":8, "refresh":False},
